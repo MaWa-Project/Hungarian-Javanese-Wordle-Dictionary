@@ -43,7 +43,7 @@ function normalizeToken(token) {
 
 async function initGame() {
     try {
-        const response = await fetch('words_hungarian.txt');
+        const response = await fetch('lemma/hungarian/words_hungarian.txt');
         const text = await response.text();
         allWords = text.split('\n').map(w => w.trim().toLowerCase()).filter(w => w.length > 0);
         resetGame();
