@@ -14,7 +14,7 @@ function normalize(word) {
 
 async function initGame() {
     try {
-        const response = await fetch('words_javanese.txt');
+        const response = await fetch('lemma/javanese/words_javanese.txt');
         const text = await response.text();
         allWords = text.split('\n').map(w => w.trim().toLowerCase()).filter(w => w.length > 0);
         resetGame();
