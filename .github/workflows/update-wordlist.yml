@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.ref }}
 
       - name: Run Python Logic
         run: python tools/wordlister.py
@@ -27,3 +29,4 @@ jobs:
         with:
           commit_message: "chore: auto-update txt files based on available XMLs"
           file_pattern: 'lemma/hungarian/words_hungarian.txt lemma/javanese/words_javanese.txt'
+          branch: ${{ github.event.pull_request.base.ref }}
