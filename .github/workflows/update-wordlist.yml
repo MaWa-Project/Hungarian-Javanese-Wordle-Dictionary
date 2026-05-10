@@ -1,0 +1,29 @@
+name: Update List of Words Based on Available XMLs
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  update-repo:
+    if: |
+      github.event.pull_request.merged == true && 
+      contains(github.event.pull_request.labels.*.name, 'XML')
+    
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Python Logic
+        run: python tools/wordlister.py
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-update txt files based on available XMLs"
+          file_pattern: 'lemma/hungarian/words_hungarian.txt lemma/javanese/words_javanese.txt'
