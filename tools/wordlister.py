@@ -10,7 +10,7 @@ def update_words(PATH, FILE):
             xmls.append(file.split("-TEI.xml")[0].lower())
 
     xmls.sort()
-    
+
     with open(PATH + FILE, "w") as f:
         for word in xmls:
             f.write(word + "\n")
