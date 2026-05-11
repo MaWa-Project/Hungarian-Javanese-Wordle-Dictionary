@@ -5,7 +5,9 @@
     <title>Wordle - Hungarian</title>
 </head>
 <body>
-    <button onclick="window.location.href='index.html'">← Go Back</button>
+    <button onclick="window.location.href='index.html'">← Home</button>
+    <button onclick="window.location.href='javanese.html'">↔ Javanese Wordle</button>
+    <hr>
     <h2>Wordle - Hungarian</h2>
     <div id="game-board"></div>
     <div id="message"></div>
@@ -14,9 +16,17 @@
     <hr>
     <details>
         <summary>Show possible words:</summary>
-        <div id="possible-words">
-        </div>
+        <div id="possible-words"></div>
     </details>
+    <script src="script/wordle-base.js"></script>
     <script src="script/hungarian.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const game = new HungarianWordle();
+            window.addEventListener('keydown', (e) => game.handleKey(e));
+            document.getElementById('reset-btn').addEventListener('click', () => game.resetGame());
+            game.initGame();
+        });
+    </script>
 </body>
 </html>
