@@ -2,30 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wordle - Hungarian</title>
+    <title>Hungarian-Javanese Wordle Dictionary - Wordle</title>
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-    <button onclick="window.location.href='index.html'">← Home</button>
-    <button onclick="window.location.href='javanese.html'">↔ Javanese Wordle</button>
-    <hr>
-    <h2>Wordle - Hungarian</h2>
-    <div id="game-board"></div>
-    <div id="message"></div>
-    <br>
-    <button id="reset-btn">Reset Game</button>
-    <hr>
-    <details>
-        <summary>Show possible words:</summary>
-        <div id="possible-words"></div>
-    </details>
-    <script src="script/wordle-base.js"></script>
-    <script src="script/hungarian.js"></script>
-    <script>
+    <nav>
+        <button onclick="window.location.href='index.html'">← Home</button>
+        <button onclick="window.location.href='javanese.html'">↔ Javanese Wordle</button>
+    </nav>
+    <div class="columns">
+        <div class="main-content column-left">
+            <div class="content-card">
+                <header>
+                    <div id="wordle-title"></div>
+                    <h1>Game - Hungarian</h1>
+                    <p>Guess the 5-letter Hungarian word in 6 tries:</p>
+                </header>
+                <div id="game-board"></div>
+                <button id="reset-btn" class="delete-btn">Reset Game</button>
+                <footer>
+                    <table>
+                        <tr>
+                            <td><span class="square-ref white"></span></td>
+                            <td>Ignored</td>
+                            <td><span class="square-ref gray"></span></td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td><span class="square-ref green"></span></td>
+                            <td>Correct</td>
+                            <td><span class="square-ref dark-green"></span></td>
+                            <td>Correct (wrong diacritic)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="square-ref yellow"></span></td>
+                            <td>Present</td>
+                            <td><span class="square-ref dark-yellow"></span></td>
+                            <td>Present (wrong diacritic)</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Enter your guesses using the keyboard. Use Backspace to delete. The game will suggest possible words based on your inputs.
+                    </p>
+                    <p>
+                        Note: Hungarian words contain diacritical marks, digraphs and trigraphs.
+                        Making a guess with the wrong diacritics will still count as correct/present, but will be indicated with a different color.
+                    </p>
+                    <p>
+                        For additional information, see the page about the
+                        <a href="dictionary.html?lang=hungarian">Hungarian Language</a>.
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <div class="main-content column-right">
+            <div class="content-card">
+                <details>
+                    <summary>Show possible words (Spoiler):</summary>
+                    <div id="word-list"></div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/title.js"></script>
+    <script type="module" src="script/wordle-base.js"></script>
+    <script type="module" src="script/hungarian.js"></script>
+    <script type="module">
+        import { HungarianWordle } from "./script/hungarian.js";
+
         window.addEventListener('DOMContentLoaded', () => {
             const game = new HungarianWordle();
             window.addEventListener('keydown', (e) => game.handleKey(e));
-            document.getElementById('reset-btn').addEventListener('click', () => game.resetGame());
-            game.initGame();
+                const resetBtn = document.getElementById('reset-btn');
+                if (resetBtn) {
+                    resetBtn.addEventListener('click', (e) => {
+                        game.resetGame();
+                        e.target.blur();
+                    });
+                }
+                game.initGame();
         });
     </script>
 </body>

@@ -1,11 +1,12 @@
-class WordleEngine {
+import { wordlister } from "./wordlister.js";
+
+export class WordleEngine {
     constructor(config) {
         this.wordLength = 5;
         this.maxGuesses = 6;
         this.diacriticMap = config.diacriticMap || {};
         this.langFolder = config.langFolder;
         this.fileName = config.fileName;
-        this.boxWidth = config.boxWidth || "40px";
         
         this.allWords = [];
         this.targetWordLiteral = "";
@@ -44,13 +45,12 @@ class WordleEngine {
         this.guessesTokens = [];
         this.currentGuessTokens = [];
         this.gameOver = false;
-        document.getElementById('message').textContent = "";
         this.drawBoard();
         this.updatePossibleWords();
     }
 
     getRowColors(guessTokens, targetLiteralOverride = null) {
-        const colors = Array(this.wordLength).fill("grey");
+        const colors = Array(this.wordLength).fill("gray");
         const tTokens = targetLiteralOverride ? this.tokenize(targetLiteralOverride) : this.targetWordTokens;
         const tNorm = tTokens.map(t => this.normalizeToken(t));
         const availableNorm = [...tNorm];
@@ -58,7 +58,7 @@ class WordleEngine {
 
         for (let i = 0; i < this.wordLength; i++) {
             if (gNorm[i] === tNorm[i]) {
-                colors[i] = (guessTokens[i] === tTokens[i]) ? "#6aaa64" : "#4a7a44"; 
+                colors[i] = (guessTokens[i] === tTokens[i]) ? "green" : "dark-green"; 
                 availableNorm[i] = null; 
             }
         }
@@ -68,7 +68,7 @@ class WordleEngine {
                 const idx = availableNorm.indexOf(gNorm[i]);
                 if (idx !== -1) {
                     const literalExists = tTokens.some((t, tIdx) => availableNorm[tIdx] !== null && t === guessTokens[i]);
-                    colors[i] = literalExists ? "#c9b458" : "#91823f";
+                    colors[i] = literalExists ? "yellow" : "dark-yellow";
                     availableNorm[idx] = null;
                 }
             }
@@ -81,21 +81,17 @@ class WordleEngine {
         board.innerHTML = '';
         for (let i = 0; i < this.maxGuesses; i++) {
             const row = document.createElement('div');
+            row.className = "game-row";
             const guess = this.guessesTokens[i];
             const colors = guess ? this.getRowColors(guess) : [];
 
             for (let j = 0; j < this.wordLength; j++) {
                 const box = document.createElement('span');
-                box.className = "wordle-box";
-                Object.assign(box.style, {
-                    border: "1px solid black", display: "inline-block", textAlign: "center",
-                    lineHeight: "40px", margin: "2px", height: "40px",
-                    width: this.boxWidth, color: guess ? "white" : "black"
-                });
+                box.className = "game-box";
 
                 if (guess) {
                     box.textContent = guess[j];
-                    box.style.backgroundColor = colors[j];
+                    box.className = `game-box white-text ${colors[j]}`;
                 } else if (i === this.guessesTokens.length && this.currentGuessTokens[j]) {
                     box.textContent = this.currentGuessTokens[j];
                 }
@@ -106,7 +102,7 @@ class WordleEngine {
     }
 
     updatePossibleWords() {
-        const listContainer = document.getElementById('possible-words');
+        const listContainer = document.getElementById('word-list');
         
         const candidates = this.allWords.filter(word => {
             const wordTokens = this.tokenize(word);
@@ -118,20 +114,7 @@ class WordleEngine {
             });
         });
 
-    if (candidates.length === 0) { 
-        listContainer.innerHTML = "<p>No words found.</p>"; 
-        return; 
-    }
-
-    let html = `<strong>Words found: ${candidates.length}</strong><ul>`;
-    const limit = 200;
-    
-    candidates.slice(0, limit).forEach(word => {
-        html += `<li><a href="entry.html?word=${encodeURIComponent(word)}&lang=${this.langFolder}">${word}</a></li>`;
-    });
-    
-    html += "</ul>";
-    if (candidates.length > limit) html += `<p><em>...and ${candidates.length - limit} more.</em></p>`;
-    listContainer.innerHTML = html;
+        const limit = 200;
+        wordlister(this.langFolder, candidates, limit);
     }
 }

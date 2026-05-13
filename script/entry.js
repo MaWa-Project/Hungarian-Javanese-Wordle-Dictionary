@@ -4,14 +4,14 @@ async function loadEntry() {
     const lang = urlParams.get('lang');
     const container = document.getElementById('entry-container');
 
-    document.getElementById('back-btn').onclick = () => {
-        window.location.href = `dictionary.html?lang=${lang}`;
-    };
-
     if (!word || !lang) {
         container.textContent = "Entry not found.";
         return;
     }
+
+    document.getElementById('back-btn').onclick = () => {
+        window.location.href = `dictionary.html?lang=${lang}`;
+    };
 
     try {
         const fileName = word.charAt(0).toUpperCase() + word.slice(1);
@@ -32,7 +32,7 @@ function renderTEI(xml, container) {
 
     // Create main card
     const article = document.createElement('article');
-    article.className = "entry-card";
+    article.className = "content-card";
 
     // 1. HEADER SECTION
     const lemmaNode = xml.querySelector("form[type='lemma']");

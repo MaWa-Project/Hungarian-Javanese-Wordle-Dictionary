@@ -1,9 +1,10 @@
-class HungarianWordle extends WordleEngine {
+import { WordleEngine } from "./wordle-base.js";
+
+export class HungarianWordle extends WordleEngine {
     constructor() {
         super({
             langFolder: 'hungarian',
             fileName: 'words_hungarian.txt',
-            boxWidth: "60px",
             diacriticMap: { 'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ö': 'o', 'ő': 'o', 'ú': 'u', 'ü': 'u', 'ű': 'u' }
         });
         this.DIGRAPHS = ["dzs", "dz", "cs", "gy", "ly", "ny", "sz", "ty"];
@@ -26,15 +27,10 @@ class HungarianWordle extends WordleEngine {
             const targetNorm = this.targetWordNorm.join('');
             this.guessesTokens.push([...this.currentGuessTokens]);
 
-            if (guessNorm === targetNorm) {
-                const link = `<a href="entry.html?word=${encodeURIComponent(this.targetWordLiteral)}&lang=${this.langFolder}">${this.targetWordLiteral}</a>`;
-                document.getElementById('message').innerHTML = `Victory! The word is: <strong>${link}</strong>`;
-                this.gameOver = true;
-            } else if (this.guessesTokens.length === this.maxGuesses) {
-                const link = `<a href="entry.html?word=${encodeURIComponent(this.targetWordLiteral)}&lang=${this.langFolder}">${this.targetWordLiteral}</a>`;
-                document.getElementById('message').innerHTML = `Game Over. The word was: <strong>${link}</strong>`;
+            if ((guessNorm === targetNorm) || (this.guessesTokens.length === this.maxGuesses)) {
                 this.gameOver = true;
             }
+
             this.currentGuessTokens = [];
             this.updatePossibleWords();
         } else if (e.key === 'Backspace') {
@@ -54,3 +50,4 @@ class HungarianWordle extends WordleEngine {
         this.drawBoard();
     }
 }
+window.HungarianWordle = HungarianWordle;

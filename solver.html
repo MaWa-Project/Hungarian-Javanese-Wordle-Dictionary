@@ -2,38 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wordle Solver - Grid Mode</title>
-    <style>
-        .solver-board { display: flex; flex-direction: column; gap: 5px; margin-bottom: 20px; }
-        .solver-row { display: flex; gap: 5px; }
-        .solver-box {
-            width: 60px; height: 45px;
-            line-height: 45px; text-align: center; 
-            border: 2px solid #3a3a3c;
-            cursor: pointer; user-select: none; 
-            color: white; font-weight: bold; font-size: 1.5rem;
-            background-color: #121213;
-            text-transform: uppercase;
-        }
-        .solver-box.active { border-color: #818384; }
-        .solver-box.filled { color: white; border-color: #565758; }
-    </style>
+    <title>Hungarian-Javanese Wordle Dictionary - Solver</title>
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-    <button onclick="window.location.href='index.html'">← Home</button>
-    <button id="language-changer" onclick="window.location.href='index.html'">↔ ... Solver</button>
-    <hr>
-    <h1 id="solver-title">Wordle Solver</h1>
-    
-    <div id="solver-board" class="solver-board"></div>
-    <hr>
-    <div id="possible-words">
-        <p>Loading dictionary...</p>
+    <nav>
+        <button onclick="window.location.href='index.html'">← Home</button>
+        <button id="language-changer" onclick="window.location.href='index.html'">↔ ... Solver</button>
+    </nav>
+    <div class="columns">
+        <div class="main-content column-left">
+            <div class="content-card">
+                <header>
+                    <div id="wordle-title"></div>
+                    <h1 id="solver-title">Solver</h1>
+                    <p>Click boxes to set feedback colors, then see possible words.</p>
+                </header>
+                <div id="game-board"></div>
+                <button id="reset-solver-btn" class="delete-btn">Reset Solver</button>
+                <footer>
+                    <table>
+                        <tr>
+                            <td><span class="square-ref white"></span></td>
+                            <td>Ignored</td>
+                            <td><span class="square-ref gray"></span></td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td><span class="square-ref green"></span></td>
+                            <td>Correct</td>
+                            <td><span class="square-ref dark-green"></span></td>
+                            <td>Correct (wrong diacritic)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="square-ref yellow"></span></td>
+                            <td>Present</td>
+                            <td><span class="square-ref dark-yellow"></span></td>
+                            <td>Present (wrong diacritic)</td>
+                        </tr>
+                    </table>
+                    <div id="wordle-info"></div>
+                </footer>
+            </div>
+        </div>
+        <div class="main-content column-right">
+            <div class="content-card">
+                <details>
+                    <summary>Show possible words:</summary>
+                    <div id="word-list">
+                        <p>Loading dictionary...</p>
+                    </div>
+                </details>
+            </div>
+        </div>
     </div>
 
-    <script src="script/wordle-base.js"></script>
-    <script src="script/hungarian.js"></script>
-    <script src="script/javanese.js"></script>
-    <script src="script/solver.js"></script>
+    <script src="script/title.js"></script>
+    <script type="module" src="script/solver.js"></script>
 </body>
 </html>
