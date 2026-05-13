@@ -1,0 +1,30 @@
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --hu-color: #2c3e50;
+    --jv-color: #27ae60;
+    --text-main: #333;
+}
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    border-bottom: 2px solid var(--hu-color);
+    background-color: white;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: var(--hu-color);
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+nav button:hover {
+    background: var(--hu-color);
+    color: white;
+    border-radius: 4px;
+    transition: all 0.4s ease-out;
+}

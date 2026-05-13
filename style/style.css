@@ -1,1 +1,166 @@
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --hu-color: #2c3e50;
+    --jv-color: #27ae60;
+    --text-main: #333;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+h1 { color: var(--hu-color); margin: 0 0 20px 0; }
+h2 { color: var(--hu-color); margin: 0 0 0 0; }
+
+header {
+    border-bottom: 5px solid var(--bg-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    border-top: 5px solid var(--bg-color);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+summary {
+    border-bottom: 5px solid var(--bg-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: var(--hu-color);
+    font-size: 1.1em;
+    cursor: pointer;
+
+}
+
+.columns { 
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.column-left { flex: 1; max-width: 800px; }
+.column-right { flex: 1; max-width: 700px; }
+
+button {
+    background: var(--card-bg);
+    border: 2px solid var(--hu-color);
+    color: var(--hu-color);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+button.delete-btn {
+    background: rgb(158, 17, 17);
+    border-color: rgb(158, 17, 17);
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: var(--hu-color);
+    color: white;
+    transition: all 0.2s ease-out;
+}
+button.delete-btn:hover {
+    background: rgb(224, 39, 39);
+    border-color: rgb(224, 39, 39);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.content-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 20px 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-left: 8px solid var(--hu-color);
+}
+
+.square-ref {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    border: 1px solid var(--hu-color);
+}
+.wordle {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.game-box {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.white-text { color: white; }
+.white { background: #ffffff; }
+.black { background: #121213; }
+.gray { background: #3a3a3c; }
+.green { background: #538d4e; }
+.yellow { background: #b59f3b; }
+.dark-green { background: #16640f; }
+.dark-yellow { background: #927a0e; }
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+#game-board {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.possible-words {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}

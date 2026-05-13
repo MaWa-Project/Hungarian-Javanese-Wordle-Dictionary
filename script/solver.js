@@ -1,4 +1,9 @@
-class WordleSolver {
+import { wordlister } from "./wordlister.js";
+import { HungarianWordle } from "./hungarian.js";
+import { JavaneseWordle } from "./javanese.js";
+import { WordleEngine } from "./wordle-base.js";
+
+export class WordleSolver {
     constructor() {
         const urlParams = new URLSearchParams(window.location.search);
         this.lang = urlParams.get('lang') || 'hungarian';
@@ -11,10 +16,43 @@ class WordleSolver {
         }));
         
         this.activeRow = 0;
-        this.colorCycle = ["#3a3a3c", "#6aaa64", "#4a7a44", "#c9b458", "#91823f"];
+        this.colorCycle = ["gray", "green", "dark-green", "yellow", "dark-yellow"];
         
         document.getElementById('solver-title').textContent = 
-            (this.lang === 'hungarian' ? "Magyar" : "Jawa") + " Wordle Solver";
+             "Solver - " + (this.lang === 'hungarian' ? "Hungarian" : "Javanese");
+
+        const resetBtn = document.getElementById('reset-solver-btn'); //
+        if (resetBtn) {
+            resetBtn.onclick = () => this.resetSolver();
+        }
+
+        const infoText = document.getElementById('wordle-info');
+        if (infoText) {
+            infoText.innerHTML = `
+                <p>
+                Click on the boxes to cycle through colors.
+                Enter your guesses using the keyboard. Use Backspace to delete.
+                The solver will suggest possible words based on your inputs.
+                </p>
+                <p>
+                Note: ${this.lang === 'javanese' ? "Javanese" : "Hungarian"} words contain ${this.lang === 'javanese' ? "diacritical marks" : "diacritical marks, digraphs and trigraphs"}.
+                </p>
+                <p>
+                For additional information, see the page about the
+                ${this.lang === 'javanese' ?
+                    "<a href='dictionary.html?lang=javanese'>Javanese Language</a>" :
+                    "<a href='dictionary.html?lang=hungarian'>Hungarian Language</a>"}.
+            `;
+        }
+    }
+
+    resetSolver() {
+        this.grid = Array.from({ length: 6 }, () => ({
+            tokens: [],
+            colors: Array(5).fill("initial") 
+        }));
+        this.activeRow = 0;
+        this.render();
     }
 
     async init() {
@@ -81,48 +119,28 @@ class WordleSolver {
     }
 
     render() {
-        const board = document.getElementById('solver-board');
+        const board = document.getElementById('game-board');
         board.innerHTML = "";
 
         this.grid.forEach((row, rIdx) => {
             const rowEl = document.createElement('div');
-            rowEl.className = "solver-row";
-            rowEl.style.display = "flex";
-            rowEl.style.gap = "5px";
-            rowEl.style.marginBottom = "5px";
+            rowEl.className = "game-row";
 
             for (let tIdx = 0; tIdx < this.engine.wordLength; tIdx++) {
-                const box = document.createElement('div');
-                box.className = "solver-box";
+                const box = document.createElement('span');
                 const token = row.tokens[tIdx] || "";
                 
                 box.textContent = token;
-                box.style.width = this.engine.boxWidth;
-                box.style.height = "45px";
-                box.style.lineHeight = "45px";
-                box.style.textAlign = "center";
-                box.style.border = "2px solid #3a3a3c";
-                box.style.fontWeight = "bold";
-                box.style.fontSize = "1.5rem";
-                box.style.textTransform = "uppercase";
-                box.style.cursor = "pointer";
 
                 if (token) {
-                    box.style.color = "white";
+                    box.className = "game-box white-text";
                     if (row.colors[tIdx] === "initial") {
-                        box.style.backgroundColor = "#3a3a3c"; 
-                        box.style.borderColor = "#565758";
+                        box.className = "game-box white-text gray";
                     } else {
-                        box.style.backgroundColor = row.colors[tIdx];
-                        box.style.borderColor = "transparent";
+                        box.className = "game-box white-text " + row.colors[tIdx];
                     }
                 } else {
-                    box.style.backgroundColor = "#121213"; 
-                    box.style.color = "black";
-                }
-
-                if (rIdx === this.activeRow) {
-                    box.style.borderColor = "#818384";
+                    box.className = "game-box";
                 }
 
                 box.onclick = () => this.toggleColor(rIdx, tIdx);
@@ -142,8 +160,6 @@ class WordleSolver {
     }
 
     updateSuggestions() {
-        const listContainer = document.getElementById('possible-words');
-        
         const candidates = this.engine.allWords.filter(word => {
             const wordTokens = this.engine.tokenize(word);
             if (wordTokens.length !== this.engine.wordLength) return false;
@@ -156,8 +172,8 @@ class WordleSolver {
 
                 for (let t = 0; t < row.tokens.length; t++) {
                     const currentColor = row.colors[t];
-                    const logicColor = (currentColor === "initial" || currentColor === "#3a3a3c") 
-                        ? "grey" 
+                    const logicColor = (currentColor === "initial" || currentColor === "gray") 
+                        ? "gray" 
                         : currentColor;
 
                     if (expectedColors[t] !== logicColor) return false;
@@ -166,13 +182,8 @@ class WordleSolver {
             return true;
         });
 
-        let html = `<strong>Matches Found: ${candidates.length}</strong><ul>`;
-        candidates.slice(0, 200).forEach(word => {
-            html += `<li><a href="entry.html?word=${encodeURIComponent(word)}&lang=${this.lang}">${word}</a></li>`;
-        });
-        html += "</ul>";
-        if (candidates.length > 200) html += `<p>...and ${candidates.length - 200} more.</p>`;
-        listContainer.innerHTML = html;
+        const limit = 200;
+        wordlister(this.lang, candidates, limit);
     }
 }
 

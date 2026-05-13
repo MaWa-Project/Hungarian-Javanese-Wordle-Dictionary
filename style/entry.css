@@ -1,0 +1,22 @@
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --hu-color: #2c3e50;
+    --jv-color: #27ae60;
+    --text-main: #333;
+}
+
+.lemma { font-size: 2.5em; color: var(--hu-color); margin: 0; }
+.pron { font-style: italic; color: #666; }
+.pos { background: #eef; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; font-weight: bold; }
+
+.sense-block { margin: 20px 0; padding: 8px; border-radius: 8px; background: #fafafa; }
+.register { font-weight: bold; color: var(--jv-color); margin-bottom: 5px; display: block; }
+.orth { font-size: 1.2em; }
+
+.cit-example { margin-top: 15px; font-size: 0.95em; line-height: 1.6; }
+.quote { display: block; margin-bottom: 5px; }
+.lang-hu { color: var(--hu-color); }
+.lang-jv { color: var(--jv-color); }
+.notes { margin-top: 20px; font-size: 0.9em; }
+.note-title { font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #888; }

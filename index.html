@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hungarian-Javanese Wordle Dictionary</title>
+    <title>Hungarian-Javanese Wordle Dictionary - Home</title>
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-    <h1>Hungarian-Javanese</h1>
-    <h2>Wordle Dictionary</h2>
-    <p>Select the language of the word you are looking for:</p>
-    
-    <div id="hungarian-wordle">
-        <button onclick="window.location.href='hungarian.html'">Magyar (Hungarian) Wordle</button>
+    <nav>
+        <button onclick="window.location.href='index.html'">← Home</button>
+    </nav>
+    <div class="main-content">
+        <div class="content-card">
+            <header>
+                <h1>Hungarian-Javanese <div id="wordle-title"></div> Dictionary</h1>
+                <p>Select the language and mode to begin:</p>
+            </header>
+            <div>
+                <h2>Magyar (Hungarian):</h2>
+                <div class="buttons">
+                    <button onclick="window.location.href='hungarian.html'">Wordle</button>
+                    <button onclick="window.location.href='solver.html?lang=hungarian'">Solver</button>
+                    <button onclick="window.location.href='dictionary.html?lang=hungarian'">Dictionary</button>
+                </div>
+                <h2>Jawa (Javanese):</h2>
+                <div class="buttons">
+                    <button onclick="window.location.href='javanese.html'">Wordle</button>
+                    <button onclick="window.location.href='solver.html?lang=javanese'">Solver</button>
+                    <button onclick="window.location.href='dictionary.html?lang=javanese'">Dictionary</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="javanese-wordle">
-        <button onclick="window.location.href='javanese.html'">Jawa (Javanese) Wordle</button>
-    </div>
-    <div id="hungarian-wordle-solver">
-        <button onclick="window.location.href='solver.html?lang=hungarian'">Magyar (Hungarian) Solver</button>
-    </div>
-    <div id="javanese-wordle-solver">
-        <button onclick="window.location.href='solver.html?lang=javanese'">Jawa (Javanese) Solver</button>
-    </div>
-    <div id="hungarian-dictionary">
-        <button onclick="window.location.href='dictionary.html?lang=hungarian'">Magyar (Hungarian) Dictionary</button>
-    </div>
-    <div id="javanese-dictionary">
-        <button onclick="window.location.href='dictionary.html?lang=javanese'">Jawa (Javanese) Dictionary</button>
-    </div>
+
+    <script src="script/title.js"></script>
 </body>
 </html>

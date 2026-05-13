@@ -2,15 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bilingual Dictionary - List</title>
+    <title>Hungarian-Javanese Wordle Dictionary - Dictionary</title>
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-    <button onclick="window.location.href='index.html'">← Home</button>
-    <button id="language-changer" onclick="window.location.href='index.html'">↔ ... Solver</button>
-    <hr>
-    <h1 id="dict-title">Dictionary</h1>
-    <div id="word-list">Loading words...</div>
+    <nav>
+        <button onclick="window.location.href='index.html'">← Home</button>
+        <button id="language-changer" onclick="window.location.href='index.html'">↔ ... Dictionary</button>
+    </nav>
+    <div class="main-content">
+        <div class="content-card">
+            <header>
+                <div id="wordle-title"></div>
+                <h1 id="dict-title">Dictionary</h1>
+            </header>
+            <div id="word-list">Loading words...</div>
+        </div>
+    </div>
 
-    <script src="script/dictionary.js"></script>
+    <script src="script/title.js"></script>
+    <script type="module" src="script/dictionary.js"></script>
 </body>
 </html>
