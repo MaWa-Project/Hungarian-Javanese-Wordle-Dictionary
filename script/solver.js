@@ -21,29 +21,7 @@ export class WordleSolver {
         document.getElementById('solver-title').textContent = 
              "Solver - " + (this.lang === 'hungarian' ? "Hungarian" : "Javanese");
 
-        const resetBtn = document.getElementById('reset-solver-btn'); //
-        if (resetBtn) {
-            resetBtn.onclick = () => this.resetSolver();
-        }
-
-        const infoText = document.getElementById('wordle-info');
-        if (infoText) {
-            infoText.innerHTML = `
-                <p>
-                Click on the boxes to cycle through colors.
-                Enter your guesses using the keyboard. Use Backspace to delete.
-                The solver will suggest possible words based on your inputs.
-                </p>
-                <p>
-                Note: ${this.lang === 'javanese' ? "Javanese" : "Hungarian"} words contain ${this.lang === 'javanese' ? "diacritical marks" : "diacritical marks, digraphs and trigraphs"}.
-                </p>
-                <p>
-                For additional information, see the page about the
-                ${this.lang === 'javanese' ?
-                    "<a href='dictionary.html?lang=javanese'>Javanese Language</a>" :
-                    "<a href='dictionary.html?lang=hungarian'>Hungarian Language</a>"}.
-            `;
-        }
+        this.engine.addWordleInfo(true);
     }
 
     resetSolver() {
@@ -168,7 +146,7 @@ export class WordleSolver {
                 const row = this.grid[r];
                 if (row.tokens.length === 0) continue;
 
-                const expectedColors = this.engine.getRowColors(row.tokens, word);
+                const expectedColors = this.engine.getRowColors(row.tokens, wordTokens);
 
                 for (let t = 0; t < row.tokens.length; t++) {
                     const currentColor = row.colors[t];

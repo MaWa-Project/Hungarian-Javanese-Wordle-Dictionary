@@ -1,3 +1,5 @@
+import { capitalize } from "./capitalizer.js";
+
 async function loadEntry() {
     const urlParams = new URLSearchParams(window.location.search);
     const word = urlParams.get('word');
@@ -14,8 +16,8 @@ async function loadEntry() {
     };
 
     try {
-        const fileName = word.charAt(0).toUpperCase() + word.slice(1);
-        const response = await fetch(`lemma/${lang}/${fileName}-TEI.xml`);
+        const fileName = capitalize(word) + "-TEI.xml";
+        const response = await fetch(`lemma/${lang}/${fileName}`);
         const xmlText = await response.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, "text/xml");
@@ -30,24 +32,44 @@ async function loadEntry() {
 function renderTEI(xml, container) {
     container.innerHTML = "";
 
-    // Create main card
     const article = document.createElement('article');
     article.className = "content-card";
 
-    // 1. HEADER SECTION
+    // 1. build and append Header Section
+    article.appendChild(createHeaderSection(xml));
+
+    // 2. build and append Sense Blocks
+    const senseSections = createSenseSections(xml);
+    senseSections.forEach(section => article.appendChild(section));
+
+    // 3. build and append Definition Section
+    const defSection = createDefinitionSection(xml);
+    if (defSection) article.appendChild(defSection);
+
+    // 4. build and append Examples Section
+    const exSection = createExamplesSection(xml);
+    if (exSection) article.appendChild(exSection);
+
+    // 5. build and append Footer Notes Section
+    article.appendChild(createFooterNotes(xml));
+
+    container.appendChild(article);
+}
+
+// 1. parses Lemma title details, IPA, and structural part of speech rules
+function createHeaderSection(xml) {
     const lemmaNode = xml.querySelector("form[type='lemma']");
     const header = document.createElement('header');
     header.className = "header";
 
-    // Lemma title: word + script
+    // lemma title: main word + alternate script form
     const h1 = document.createElement('h1');
     h1.className = "lemma";
-    //first two orths are the main word and its script form, if available
     const orths = Array.from(lemmaNode.querySelectorAll("orth")).map(o => o.textContent).slice(0, 2);
     h1.textContent = orths.join(' ');
     header.appendChild(h1);
 
-    // Pronunciation
+    // pronunciation syllabic extraction + custom notation slices
     const pronP = document.createElement('p');
     pronP.className = "pron";
     const syll = xml.querySelector("syllabic")?.textContent || "";
@@ -55,7 +77,7 @@ function renderTEI(xml, container) {
     pronP.innerHTML = `${syll} <span class="ipa">[${ipa}]</span>`;
     header.appendChild(pronP);
 
-    // POS and Inflection
+    // Part of Speech and associated Inflections
     const posSpan = document.createElement('span');
     posSpan.className = "pos";
     const pos = xml.querySelector("pos")?.textContent || "";
@@ -63,10 +85,14 @@ function renderTEI(xml, container) {
     posSpan.textContent = `${pos}${plural ? ` (plural: ${plural})` : ""}`;
     header.appendChild(posSpan);
 
-    article.appendChild(header);
+    return header;
+}
 
-    // 2. SENSE BLOCKS
+// 2. processes multiple translation registers into unified blocks
+function createSenseSections(xml) {
+    const sections = [];
     const senses = xml.querySelectorAll("sense");
+
     senses.forEach(sense => {
         const section = document.createElement('section');
         section.className = "sense-block";
@@ -79,59 +105,66 @@ function renderTEI(xml, container) {
         const orthDiv = document.createElement('div');
         orthDiv.className = "orth";
         const transOrths = Array.from(sense.querySelectorAll("cit orth")).map(o => o.textContent);
-        // Formats as: "manuk (ꦩꦤꦸꦏ꧀)"
+        
         orthDiv.textContent = transOrths.length > 1 
             ? `${transOrths[0]} (${transOrths[1]})` 
             : transOrths[0];
         section.appendChild(orthDiv);
 
-        article.appendChild(section);
+        sections.push(section);
     });
 
-    // 3. DEFINITION SECTION
+    return sections;
+}
+
+// 3. handles multilingual text segmentation for definitions
+function createDefinitionSection(xml) {
     const defSegs = Array.from(xml.querySelectorAll("def p seg"));
-    if (defSegs.length > 0) {
-        const defSection = document.createElement('section');
-        defSection.className = "definition";
-        // Assuming first seg is the primary definition (italicized) and others follow
-        let defHTML = `<strong>Definition:</strong> <br> <em>${defSegs[0].textContent}</em>`;
-        for (let i = 1; i < defSegs.length; i++) {
-            defHTML += `<br> ${defSegs[i].textContent}`;
-        }
-        defSection.innerHTML = `<p>${defHTML}</p>`;
-        article.appendChild(defSection);
-    }
+    if (defSegs.length === 0) return null;
 
-    // 4. EXAMPLES SECTION
+    const defSection = document.createElement('section');
+    defSection.className = "definition";
+    
+    let defHTML = `<strong>Definition:</strong> <br> <em>${defSegs[0].textContent}</em>`;
+    for (let i = 1; i < defSegs.length; i++) {
+        defHTML += `<br> ${defSegs[i].textContent}`;
+    }
+    defSection.innerHTML = `<p>${defHTML}</p>`;
+    
+    return defSection;
+}
+
+// 4. Groups contextual quotes separately by language properties
+function createExamplesSection(xml) {
     const exampleNode = xml.querySelector("cit[type='example']");
-    if (exampleNode) {
-        const exSection = document.createElement('section');
-        exSection.className = "cit-example";
+    if (!exampleNode) return null;
 
-        const quotes = Array.from(exampleNode.querySelectorAll("quote"));
-        
-        // Group quotes by language
-        const huQuotes = quotes.filter(q => q.getAttribute("xml:lang") === "Hu");
-        const jvQuotes = quotes.filter(q => q.getAttribute("xml:lang") === "Jv");
+    const exSection = document.createElement('section');
+    exSection.className = "cit-example";
 
-        if (huQuotes.length > 0) {
-            const div = document.createElement('div');
-            div.className = "quote lang-hu";
-            div.innerHTML = `<strong>Magyar:</strong> <br> ${huQuotes.map(q => q.textContent).join(' <br> ')}`;
-            exSection.appendChild(div);
-        }
+    const quotes = Array.from(exampleNode.querySelectorAll("quote"));
+    const huQuotes = quotes.filter(q => q.getAttribute("xml:lang") === "Hu");
+    const jvQuotes = quotes.filter(q => q.getAttribute("xml:lang") === "Jv");
 
-        if (jvQuotes.length > 0) {
-            const div = document.createElement('div');
-            div.className = "quote lang-jv";
-            div.innerHTML = `<strong>Jawa:</strong> <br> ${jvQuotes.map(q => q.textContent).join(' <br> ')}`;
-            exSection.appendChild(div);
-        }
-
-        article.appendChild(exSection);
+    if (huQuotes.length > 0) {
+        const div = document.createElement('div');
+        div.className = "quote lang-hu";
+        div.innerHTML = `<strong>Magyar:</strong> <br> ${huQuotes.map(q => q.textContent).join(' <br> ')}`;
+        exSection.appendChild(div);
     }
 
-    // 5. FOOTER NOTES
+    if (jvQuotes.length > 0) {
+        const div = document.createElement('div');
+        div.className = "quote lang-jv";
+        div.innerHTML = `<strong>Jawa:</strong> <br> ${jvQuotes.map(q => q.textContent).join(' <br> ')}`;
+        exSection.appendChild(div);
+    }
+
+    return exSection;
+}
+
+// 5. Generates metadata, synonyms, compounds, and directional references
+function createFooterNotes(xml) {
     const footer = document.createElement('footer');
     footer.className = "notes";
 
@@ -154,8 +187,7 @@ function renderTEI(xml, container) {
         }
     });
 
-    article.appendChild(footer);
-    container.appendChild(article);
+    return footer;
 }
 
 loadEntry();

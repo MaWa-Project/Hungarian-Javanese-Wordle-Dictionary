@@ -5,6 +5,7 @@
     <title>Hungarian-Javanese Wordle Dictionary - Wordle</title>
     <link rel="stylesheet" type="text/css" href="style/nav.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
     <nav>
@@ -20,39 +21,10 @@
                     <p>Guess the 5-letter Hungarian word in 6 tries:</p>
                 </header>
                 <div id="game-board"></div>
-                <button id="reset-btn" class="delete-btn">Reset Game</button>
+                <button id="reset-btn" class="reset-btn">Reset Game</button>
                 <footer>
-                    <table>
-                        <tr>
-                            <td><span class="square-ref white"></span></td>
-                            <td>Ignored</td>
-                            <td><span class="square-ref gray"></span></td>
-                            <td>Absent</td>
-                        </tr>
-                        <tr>
-                            <td><span class="square-ref green"></span></td>
-                            <td>Correct</td>
-                            <td><span class="square-ref dark-green"></span></td>
-                            <td>Correct (wrong diacritic)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="square-ref yellow"></span></td>
-                            <td>Present</td>
-                            <td><span class="square-ref dark-yellow"></span></td>
-                            <td>Present (wrong diacritic)</td>
-                        </tr>
-                    </table>
-                    <p>
-                        Enter your guesses using the keyboard. Use Backspace to delete. The game will suggest possible words based on your inputs.
-                    </p>
-                    <p>
-                        Note: Hungarian words contain diacritical marks, digraphs and trigraphs.
-                        Making a guess with the wrong diacritics will still count as correct/present, but will be indicated with a different color.
-                    </p>
-                    <p>
-                        For additional information, see the page about the
-                        <a href="dictionary.html?lang=hungarian">Hungarian Language</a>.
-                    </p>
+                    <div id="color-info"></div>
+                    <div id="wordle-info"></div>
                 </footer>
             </div>
         </div>
@@ -67,22 +39,16 @@
     </div>
 
     <script src="script/title.js"></script>
+    <script src="script/colorinfo.js"></script>
     <script type="module" src="script/wordle-base.js"></script>
     <script type="module" src="script/hungarian.js"></script>
     <script type="module">
         import { HungarianWordle } from "./script/hungarian.js";
 
+        const game = new HungarianWordle();
         window.addEventListener('DOMContentLoaded', () => {
-            const game = new HungarianWordle();
             window.addEventListener('keydown', (e) => game.handleKey(e));
-                const resetBtn = document.getElementById('reset-btn');
-                if (resetBtn) {
-                    resetBtn.addEventListener('click', (e) => {
-                        game.resetGame();
-                        e.target.blur();
-                    });
-                }
-                game.initGame();
+            game.initGame();
         });
     </script>
 </body>
