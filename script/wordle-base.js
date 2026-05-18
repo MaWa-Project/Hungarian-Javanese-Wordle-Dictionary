@@ -13,9 +13,14 @@ export class WordleEngine {
         this.targetWordLiteral = "";    // the actual target word as a string (for display and reference)
         this.targetWordTokens = [];     // the target word split into tokens (characters/digraphs) for processing guesses
         this.targetWordNorm = [];       // the target word normalized for comparison
-        this.guessesTokens = [];        // array of all guesses (as tokens)
+        this.guessesTokens = Array.from({ length: 6 }, () => Array(5).fill(""));        // array of all guesses (as tokens)
+        this.guessesColors = Array.from({ length: 6 }, () => Array(5).fill("initial")); // array of all guesses (as colors)
         this.currentGuessTokens = [];   // the current guess being processed
         this.gameOver = false;          // flag to prevent input after game ends
+        
+        this.activeRow = 0;             // tracks which guess row is currently active for input
+        this.isSolverMode = false;      // solver mode has different key handling and doesn't end the game on correct guess
+        this.onBoxClick = null;         // click callback for solver interactions
     }
 
     // default tokenization splits the word into characters (no digraphs/trigraphs)
@@ -35,7 +40,8 @@ export class WordleEngine {
             const text = await response.text();
             // store all words in lowercase for consistent processing (removes empty lines)
             this.allWords = text.split('\n').map(w => w.trim().toLowerCase()).filter(w => w.length > 0);
-            this.addWordleInfo();
+
+            this.addWordleInfo(this.isSolverMode);
             this.addResetButton();
             this.resetGame();
         } catch (e) {
@@ -46,15 +52,103 @@ export class WordleEngine {
     // resets the game and selects a new target word
     resetGame() {
         const validWords = this.allWords.filter(w => this.tokenize(w).length === this.wordLength);
+        if (validWords.length === 0) return;
         this.targetWordLiteral = validWords[Math.floor(Math.random() * validWords.length)];
         this.targetWordTokens = this.tokenize(this.targetWordLiteral);
         this.targetWordNorm = this.targetWordTokens.map(t => this.normalizeToken(t));
         
-        this.guessesTokens = [];
+        this.guessesTokens = Array.from({ length: 6 }, () => Array(5).fill(""));
+        this.guessesColors = Array.from({ length: 6 }, () => Array(5).fill("initial"));
         this.currentGuessTokens = [];
+        this.activeRow = 0;
         this.gameOver = false;
+
         this.drawBoard();
         this.updatePossibleWords();
+    }
+
+    // appends a character to the current guess if it doesn't exceed the word length
+    appendChar(char) {
+        if (this.currentGuessTokens.length < this.wordLength) {
+            this.currentGuessTokens.push(char);
+        }
+    }
+
+    // handles keyboard input for making guesses, deleting characters, and submitting guesses
+    handleKey(e) {
+        // prevent input if game is over
+        if (this.gameOver) return;
+
+        // if Enter is pressed and current guess has 5 tokens, process the guess
+        if (e.key === 'Enter' && this.currentGuessTokens.length === this.wordLength) {
+            if (this.isSolverMode) {
+                this.guessesTokens[this.activeRow] = [...this.currentGuessTokens];
+                if (this.activeRow < this.maxGuesses - 1) this.activeRow++;
+                this.currentGuessTokens = [];
+            } else {
+                const guessNorm = this.currentGuessTokens.map(t => this.normalizeToken(t)).join('');
+                const targetNorm = this.targetWordNorm.join('');
+                
+                this.guessesTokens[this.activeRow] = [...this.currentGuessTokens];
+                this.guessesColors[this.activeRow] = this.getRowColors(this.currentGuessTokens, this.targetWordTokens);
+
+                if ((guessNorm === targetNorm) || (this.activeRow === this.maxGuesses - 1)) {
+                    this.gameOver = true;
+                }
+                
+                this.activeRow++;
+                this.currentGuessTokens = [];
+            }
+            this.updatePossibleWords();
+        }
+        // if Backspace is pressed, remove the last token from the current row
+        else if (e.key === 'Backspace') {
+            // if there are tokens in the current guess, remove the last one
+            if (this.currentGuessTokens.length > 0) {
+                this.currentGuessTokens.pop();
+                if (this.isSolverMode) this.updatePossibleWords();
+            }
+            // if the current guess is empty and we're in solver mode, allow going back to the previous row
+            else if (this.isSolverMode && this.activeRow > 0) {
+                this.activeRow--;
+                this.currentGuessTokens = [...this.guessesTokens[this.activeRow]];
+                this.guessesTokens[this.activeRow] = Array(5).fill("");
+                
+                this.updatePossibleWords();
+            }
+        }
+        // if a valid character key is pressed, append it to the current guess
+        else if (/^[a-z|áéíóöőúüűåèé\u00C0-\u017F]$/i.test(e.key)) {
+            const char = e.key.toLowerCase();
+
+            // in solver mode, if the current guess is already full, we check if adding the new character would form a digraph/trigraph
+            // if not, we move to the next row before appending the character
+            if (this.isSolverMode && this.currentGuessTokens.length === this.wordLength) {
+                let formsDigraph = false;
+                
+                // check if adding the new character would form a digraph/trigraph
+                if (this.DIGRAPHS && this.currentGuessTokens.length > 0) {
+                    const lastToken = this.currentGuessTokens[this.currentGuessTokens.length - 1];
+                    const combo = lastToken + char;
+                    if (this.DIGRAPHS.includes(combo) || (lastToken === "dz" && char === "s")) {
+                        formsDigraph = true;
+                    }
+                }
+
+                // move to the next row before appending the character
+                if (!formsDigraph) {
+                    if (this.activeRow < this.maxGuesses - 1) {
+                        this.guessesTokens[this.activeRow] = [...this.currentGuessTokens];
+                        this.activeRow++;
+                        this.currentGuessTokens = [];
+                    }
+                }
+            }
+
+            this.appendChar(char);
+            if (this.isSolverMode) this.updatePossibleWords();
+        }
+        this.drawBoard();
     }
 
     // determines the color for each token in a guess
@@ -88,25 +182,45 @@ export class WordleEngine {
     // initializes the board with empty tokens and default colors
     drawBoard() {
         const board = document.getElementById('game-board');
+        if (!board) return;
         board.innerHTML = '';
+
         for (let i = 0; i < this.maxGuesses; i++) {
             const row = document.createElement('div');
             row.className = "game-row";
-            const guess = this.guessesTokens[i];
-            const colors = guess ? this.getRowColors(guess, this.targetWordTokens) : [];
 
             for (let j = 0; j < this.wordLength; j++) {
                 const box = document.createElement('span');
                 box.className = "game-box";
 
-                // if there's a guess (filled) for this row, fill in the token and color
-                // otherwise, show current guess tokens without colors
-                if (guess) {
-                    box.textContent = guess[j];
-                    box.className = `game-box white-text ${colors[j]}`;
-                } else if (i === this.guessesTokens.length && this.currentGuessTokens[j]) {
-                    box.textContent = this.currentGuessTokens[j];
+                // from current guess if it's the active row
+                // otherwise from the stored guesses
+                let token = "";
+                if (i === this.activeRow) {
+                    token = this.currentGuessTokens[j] || "";
+                } else {
+                    token = this.guessesTokens[i][j] || "";
                 }
+
+                box.textContent = token;
+
+                // assign colors based on the guess
+                if (token) {
+                    const stateColor = this.guessesColors[i][j];
+                    if (!this.isSolverMode && stateColor === "initial") {
+                        box.classList.add("white");
+                    } else {
+                        box.classList.add("white-text");
+                        box.classList.add(stateColor === "initial" ? "gray" : stateColor);
+                    }
+                }
+                
+                // in solver mode, allow clicking on boxes to change their color
+                if (this.isSolverMode && this.onBoxClick && token && i <= this.activeRow) {
+                    box.onclick = () => this.onBoxClick(i, j);
+                    box.style.cursor = "pointer";
+                }
+
                 row.appendChild(box);
             }
             board.appendChild(row);
@@ -115,14 +229,40 @@ export class WordleEngine {
 
     // filters the word list based on the guesses and their colors
     updatePossibleWords() {
+        const listContainer = document.getElementById('word-list');
+        if (!listContainer) return;
+
         const candidates = this.allWords.filter(word => {
             const wordTokens = this.tokenize(word);
             if (wordTokens.length !== this.wordLength) return false;
-            return this.guessesTokens.every(guess => {
-                const expected = this.getRowColors(guess, wordTokens);
-                const actual = this.getRowColors(guess, this.targetWordTokens);
-                return expected.every((color, idx) => color === actual[idx]);
-            });
+
+            const checkLimit = this.isSolverMode ? this.maxGuesses : this.activeRow;
+            for (let r = 0; r < checkLimit; r++) {
+                let rowTokens = this.guessesTokens[r];
+                let rowColors = this.guessesColors[r];
+
+                if (this.isSolverMode && r === this.activeRow) {
+                    rowTokens = Array(this.wordLength).fill("");
+                    for (let j = 0; j < this.currentGuessTokens.length; j++) {
+                        rowTokens[j] = this.currentGuessTokens[j];
+                    }
+                }
+
+                if (!rowTokens || rowTokens.every(t => t === "")) continue;
+
+                const expectedColors = this.getRowColors(rowTokens, wordTokens);
+                const actualColors = this.isSolverMode ? rowColors : this.getRowColors(rowTokens, this.targetWordTokens);
+
+                for (let t = 0; t < this.wordLength; t++) {
+                    if (rowTokens[t] === "") continue;
+
+                    const currentColor = actualColors[t];
+                    const logicColor = (currentColor === "initial" || currentColor === "gray") ? "gray" : currentColor;
+
+                    if (expectedColors[t] !== logicColor) return false;
+                }
+            }
+            return true;
         });
 
         // limit the number of suggestions to avoid overwhelming the user
@@ -167,7 +307,6 @@ export class WordleEngine {
             resetBtn.addEventListener('click', (e) => {
                 this.resetGame();
                 e.target.blur();
-                console.log("Game reset");
             });
         }
     }

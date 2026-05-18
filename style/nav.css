@@ -11,6 +11,7 @@ nav {
     display: flex;
     border-bottom: 2px solid var(--hu-color);
     background-color: white;
+    box-shadow: 1px 10px 25px rgba(0,0,0,0.1);
 }
 
 nav button {
@@ -20,11 +21,11 @@ nav button {
     font-size: 1.1em;
     cursor: pointer;
     padding: 10px 15px;
+    border-radius: 0px;
 }
 
 nav button:hover {
     background: var(--hu-color);
     color: white;
-    border-radius: 4px;
     transition: all 0.4s ease-out;
 }

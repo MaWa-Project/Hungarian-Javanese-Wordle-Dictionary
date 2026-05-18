@@ -35,10 +35,12 @@ async function loadDictionary() {
 
     // set up the language switcher button
     const langChanger = document.getElementById('language-changer');
-    langChanger.innerHTML = `↔ ${capitalize(otherLang)} Dictionary`;
-    langChanger.onclick = () => {
-        window.location.href = `dictionary.html?lang=${otherLang}`;
-    };
+    if (langChanger) {
+        langChanger.innerHTML = `↔ ${capitalize(otherLang)} Dictionary`;
+        langChanger.onclick = () => {
+            window.location.href = `dictionary.html?lang=${otherLang}`;
+        };
+    }
 }
 
 loadDictionary();
