@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Hungarian&display=swap');
+
 :root {
     --bg-color: #f4f7f6;
     --card-bg: #ffffff;
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', 'Noto Sans Old Hungarian', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -42,7 +44,6 @@ summary {
 
 .columns { 
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: flex-start;
 }
@@ -91,7 +92,7 @@ button.reset-btn:hover {
     background: var(--card-bg);
     width: 100%;
     max-width: 800px;
-    padding: 20px 20px 20px 40px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     border-left: 8px solid var(--hu-color);
@@ -133,6 +134,7 @@ button.reset-btn:hover {
     text-transform: uppercase;
     vertical-align: top;
     box-sizing: border-box;
+    user-select: none;
 }
 .white-text { color: white; }
 .white { background: #ffffff; }
@@ -163,4 +165,29 @@ button.reset-btn:hover {
     list-style: none;
     padding: 0;
     font-size: 1.1rem;
+}
+
+.keyboard {
+    padding-bottom: 10px;
+}
+.key-row {
+    display: flex;
+    justify-content: center;
+}
+.key-box {
+    text-transform: uppercase;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    margin: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media only screen and (max-width:1300px) {
+    .columns { 
+        display: block;
+        width: 100%;
+    }
+    .column-left { max-width: 100%; }
+    .column-right { max-width: 100%; }
 }
