@@ -21,20 +21,25 @@
                     <p>Click boxes to set feedback colors, then see possible words.</p>
                 </header>
                 <div id="game-board"></div>
-                <button id="reset-btn" class="reset-btn">Reset Solver</button>
+                <div class="buttons"><button id="reset-btn" class="reset-btn">Reset Game</button></div>
                 <footer>
-                    <div id="color-info"></div>
-                    <div id="wordle-info"></div>
+                    <details>
+                        <summary>Keyboard:</summary>
+                        <div id="keyboard" class="keyboard"></div>
+                    </details>
+                    <details>
+                        <summary>How to Use:</summary>
+                        <div id="color-info"></div>
+                        <div id="wordle-info"></div>
+                    </details>
                 </footer>
             </div>
         </div>
         <div class="main-content column-right">
             <div class="content-card">
                 <details>
-                    <summary>Show possible words:</summary>
-                    <div id="word-list">
-                        <p>Loading dictionary...</p>
-                    </div>
+                    <summary>Show Possible Words:</summary>
+                    <div id="word-list"></div>
                 </details>
             </div>
         </div>

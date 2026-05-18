@@ -44,6 +44,7 @@ export class WordleEngine {
             this.addWordleInfo(this.isSolverMode);
             this.addResetButton();
             this.resetGame();
+            this.addKeyboard();
         } catch (e) {
             console.error(`Could not load ${this.fileName}`, e);
         }
@@ -113,6 +114,7 @@ export class WordleEngine {
                 this.activeRow--;
                 this.currentGuessTokens = [...this.guessesTokens[this.activeRow]];
                 this.guessesTokens[this.activeRow] = Array(5).fill("");
+                this.currentGuessTokens.pop();
                 
                 this.updatePossibleWords();
             }
@@ -268,6 +270,39 @@ export class WordleEngine {
         // limit the number of suggestions to avoid overwhelming the user
         const limit = 200;
         wordlister(this.langFolder, candidates, limit);
+    }
+
+    // creates an on-screen keyboard for phone users
+    addKeyboard() {
+        const keyboard = document.getElementById('keyboard');
+        if (!keyboard) return;
+        keyboard.innerHTML = '';
+
+        // blueprint for how the keys should appear on screen
+        const bindings = [
+            [ "ö", "ü", "ő", "ű", "ó", "ú", "Backspace", "Enter" ],
+            [ "q", "w", "e", "r", "t", "z", "u", "i", "o", "p" ],
+            [ "a", "s", "d", "f", "g", "h", "j", "k", "l", "é" ],
+            [ "í", "y", "x", "c", "v", "b", "n", "m", "á" ]
+        ]
+
+        // creates the keyboard HTML and adds eventListeners that link to handleKey
+        bindings.forEach((keyrow) => {
+            const row = document.createElement('div');
+            row.className = "key-row";
+            keyrow.forEach((key) => {
+                const button = document.createElement('button');
+                button.className = "key-box";
+                button.innerHTML = key;
+                const buttonInput = { "key": key };
+                button.addEventListener('pointerdown', (e) => {
+                    this.handleKey(buttonInput);
+                    button.blur();
+                });
+                row.appendChild(button);
+            });
+            keyboard.appendChild(row);
+        });
     }
 
     // adds informational text about the game and language specifics to the page
