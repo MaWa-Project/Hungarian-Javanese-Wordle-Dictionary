@@ -58,7 +58,7 @@ button {
     padding: 10px 20px;
     border-radius: 8px;
 }
-button.delete-btn {
+button.reset-btn {
     background: rgb(158, 17, 17);
     border-color: rgb(158, 17, 17);
     color: white;
@@ -76,7 +76,7 @@ button:hover {
     color: white;
     transition: all 0.2s ease-out;
 }
-button.delete-btn:hover {
+button.reset-btn:hover {
     background: rgb(224, 39, 39);
     border-color: rgb(224, 39, 39);
 }
@@ -126,7 +126,7 @@ button.delete-btn:hover {
     margin: 2px;
     border: 1px solid black;
     border-radius: 4px;
-    font-size: 1.7em;
+    font-size: 24px;
     text-align: center;
     line-height: 50px;
     font-weight: bold;

@@ -1,4 +1,5 @@
 import { wordlister } from "./wordlister.js";
+import { capitalize } from "./capitalizer.js";
 
 async function loadDictionary() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -6,14 +7,21 @@ async function loadDictionary() {
     const otherLang = lang === 'hungarian' ? 'javanese' : 'hungarian';
     const listContainer = document.getElementById('word-list');
     
+    // basic error handling for missing container or language parameter
+    if (!listContainer) {
+        console.error("Word list container not found.");
+        return;
+    }
     if (!lang) {
         listContainer.textContent = "Language not specified.";
         return;
     }
 
+    // set the page title based on the language
     document.getElementById('dict-title').textContent = 
-        "Dictionary - " + lang.charAt(0).toUpperCase() + lang.slice(1);
+        "Dictionary - " + capitalize(lang);
 
+    // load the word list for the specified language
     try {
         const response = await fetch(`lemma/${lang}/words_${lang}.txt`);
         const text = await response.text();
@@ -25,11 +33,14 @@ async function loadDictionary() {
         console.error(e);
     }
 
+    // set up the language switcher button
     const langChanger = document.getElementById('language-changer');
-    langChanger.innerHTML = `↔ ${otherLang.charAt(0).toUpperCase() + otherLang.slice(1)} Dictionary`;
-    langChanger.onclick = () => {
-        window.location.href = `dictionary.html?lang=${otherLang}`;
-    };
+    if (langChanger) {
+        langChanger.innerHTML = `↔ ${capitalize(otherLang)} Dictionary`;
+        langChanger.onclick = () => {
+            window.location.href = `dictionary.html?lang=${otherLang}`;
+        };
+    }
 }
 
 loadDictionary();

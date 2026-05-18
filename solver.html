@@ -5,6 +5,7 @@
     <title>Hungarian-Javanese Wordle Dictionary - Solver</title>
     <link rel="stylesheet" type="text/css" href="style/nav.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
     <nav>
@@ -16,32 +17,13 @@
             <div class="content-card">
                 <header>
                     <div id="wordle-title"></div>
-                    <h1 id="solver-title">Solver</h1>
+                    <h1 id="solver-title">... Solver</h1>
                     <p>Click boxes to set feedback colors, then see possible words.</p>
                 </header>
                 <div id="game-board"></div>
-                <button id="reset-solver-btn" class="delete-btn">Reset Solver</button>
+                <button id="reset-btn" class="reset-btn">Reset Solver</button>
                 <footer>
-                    <table>
-                        <tr>
-                            <td><span class="square-ref white"></span></td>
-                            <td>Ignored</td>
-                            <td><span class="square-ref gray"></span></td>
-                            <td>Absent</td>
-                        </tr>
-                        <tr>
-                            <td><span class="square-ref green"></span></td>
-                            <td>Correct</td>
-                            <td><span class="square-ref dark-green"></span></td>
-                            <td>Correct (wrong diacritic)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="square-ref yellow"></span></td>
-                            <td>Present</td>
-                            <td><span class="square-ref dark-yellow"></span></td>
-                            <td>Present (wrong diacritic)</td>
-                        </tr>
-                    </table>
+                    <div id="color-info"></div>
                     <div id="wordle-info"></div>
                 </footer>
             </div>
@@ -59,6 +41,7 @@
     </div>
 
     <script src="script/title.js"></script>
+    <script src="script/colorinfo.js"></script>
     <script type="module" src="script/solver.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@ export class HungarianWordle extends WordleEngine {
         this.DIGRAPHS = ["dzs", "dz", "cs", "gy", "ly", "ny", "sz", "ty"];
     }
 
+    // (override) Hungarian tokenization that recognizes digraphs and trigraphs
     tokenize(word) {
         let tokens = [], i = 0;
         while (i < word.length) {
@@ -20,34 +21,18 @@ export class HungarianWordle extends WordleEngine {
         return tokens;
     }
 
-    handleKey(e) {
-        if (this.gameOver) return;
-        if (e.key === 'Enter' && this.currentGuessTokens.length === this.wordLength) {
-            const guessNorm = this.currentGuessTokens.map(t => this.normalizeToken(t)).join('');
-            const targetNorm = this.targetWordNorm.join('');
-            this.guessesTokens.push([...this.currentGuessTokens]);
-
-            if ((guessNorm === targetNorm) || (this.guessesTokens.length === this.maxGuesses)) {
-                this.gameOver = true;
-            }
-
-            this.currentGuessTokens = [];
-            this.updatePossibleWords();
-        } else if (e.key === 'Backspace') {
-            this.currentGuessTokens.pop();
-        } else if (/^[a-z|áéíóöőúüű]$/i.test(e.key) && this.currentGuessTokens.length <= this.wordLength) {
-            let char = e.key.toLowerCase();
-            let lastIdx = this.currentGuessTokens.length - 1;
-            if (lastIdx >= 0) {
-                let combo = this.currentGuessTokens[lastIdx] + char;
-                if (this.DIGRAPHS.includes(combo) || (this.currentGuessTokens[lastIdx] === "dz" && char === "s")) {
-                    this.currentGuessTokens[lastIdx] = combo;
-                } else if (this.currentGuessTokens.length < this.wordLength) {
-                    this.currentGuessTokens.push(char);
-                }
-            } else { this.currentGuessTokens.push(char); }
+    // (override) handle Hungarian digraphs and trigraphs when appending characters
+    appendChar(char) {
+        let lastTokenInd = this.currentGuessTokens.length - 1;
+        let combo = this.currentGuessTokens[lastTokenInd] + char;
+        // if the last token and the new char form a valid digraph/trigraph, replace the last token with the combo
+        if (this.DIGRAPHS.includes(combo) || (this.currentGuessTokens[lastTokenInd] === "dz" && char === "s")) {
+            this.currentGuessTokens[lastTokenInd] = combo;
         }
-        this.drawBoard();
+        // if not, append the char as a new token (if we haven't reached the word length limit)
+        else if (this.currentGuessTokens.length < this.wordLength) {
+            this.currentGuessTokens.push(char);
+        }
     }
 }
 window.HungarianWordle = HungarianWordle;
