@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="tábor">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">tábor</orth>
+        <orth xml:lang="Hu" script="Runic">𐳦𐳁𐳂𐳛𐳢</orth>
+        <pron>
+          <syllabic>tá·bor</syllabic>
+          <ipa>[\\text{taːbor}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">pakemahan</orth>
+          <orth script="Jv">ꦥꦏꦼꦩꦲꦤ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">pakemahan</orth>
+          <orth script="Jv">ꦥꦏꦼꦩꦲꦤ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kegiatan nginep ing alam utawa panggonan kanggo kegiatan kuwi
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦼꦒꦶꦪꦠꦤ꧀ꦔꦶꦤꦼꦥ꧀ꦲꦶꦁꦲꦭꦱ꧀ꦲꦸꦠꦮꦥꦁꦒꦺꦴꦤ꧀ꦤꦤ꧀ꦏꦁꦒꦺꦴꦏꦼꦒꦶꦪꦠꦤ꧀ꦏꦸꦮꦶ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A tábor nyáron kezdődik</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳦𐳁𐳂𐳛𐳢 𐳙𐳚𐳁𐳢𐳛𐳙 𐳓𐳉𐳯𐳇𐳟𐳇𐳐𐳓
+        </quote>
+        <quote xml:lang="Jv" script="Latin">pakemahan diwiwiti ing mangsa panas</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦥꦏꦼꦩꦲꦤ꧀ꦢꦶꦮꦶꦮꦶꦠꦶꦲꦶꦁꦩꦁꦱꦥꦤꦱ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">táborozás</orth>
+            <orth script="Runic">𐳦𐳁𐳂𐳛𐳢𐳛𐳯𐳁𐳤</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-élet</orth>
+            <orth script="Runic">𐳋𐳖𐳉𐳦-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#sátor">
+          <orth script="Latin">sátor</orth>
+          <orth script="Runic">𐳤𐳁𐳦𐳛𐳢</orth>
+        </ref>
+      </note>
+</entry>

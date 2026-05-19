@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="király">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">király</orth>
+        <orth xml:lang="Hu" script="Runic">𐳓𐳐𐳢𐳁𐳗</orth>
+        <pron>
+          <syllabic>ki·rály</syllabic>
+          <ipa>[\\text{kiraːj}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">raja</orth>
+          <orth script="Jv">ꦫꦗ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">raja</orth>
+          <orth script="Jv">ꦫꦗ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	wong sing dadi pemimpin ing negara, biasane turun-temurun
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦮꦺꦴꦁꦱꦶꦁꦢꦢꦶꦥꦼꦩꦶꦩ꧀ꦥꦶꦤ꧀ꦲꦶꦁꦤꦼꦒꦫꦧꦶꦪꦱꦤꦺꦠꦸꦫꦸꦤ꧀ꦠꦼꦩꦸꦫꦸꦤ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A király a palotában él</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳐𐳢𐳁𐳗 𐳀 𐳠𐳀𐳖𐳛𐳦𐳁𐳂𐳀𐳙 𐳋𐳖
+        </quote>
+        <quote xml:lang="Jv" script="Latin">raja manggon ing kraton</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦫꦗꦩꦁꦒꦺꦴꦤ꧀ꦲꦶꦁꦏꦿꦠꦺꦴꦤ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">uralkodó</orth>
+            <orth script="Runic">𐳪𐳢𐳀𐳖𐳓𐳛𐳇𐳜</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ság</orth>
+            <orth script="Runic">𐳤𐳁𐳍-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#királynő">
+          <orth script="Latin">királynő</orth>
+          <orth script="Runic">𐳓𐳐𐳢𐳁𐳗𐳙𐳟</orth>
+        </ref>
+      </note>
+</entry>

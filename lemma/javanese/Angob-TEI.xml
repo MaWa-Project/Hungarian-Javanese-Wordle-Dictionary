@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="angob">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">angob</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦔꦺꦴꦧ꧀</orth>
+        <pron>
+          <syllabic>a·ngob</syllabic>
+          <ipa>[\text{aŋɔb}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">angob-angob</orth>
+            <orth xml:lang="Jv" script="Jv">ꦲꦔꦺꦴꦧ꧀ꦲꦔꦺꦴꦧ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ásít</orth>
+          <orth script="Runic">𐳁𐳤𐳑𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">tátog</orth>
+          <orth script="Runic">𐳦𐳁𐳦𐳛𐳍</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	fáradtságtól vagy unalomtól tátog
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳌𐳁𐳢𐳀𐳇𐳤𐳁𐳍𐳦𐳛𐳖 𐳮𐳀𐳎 𐳪𐳀𐳙𐳀𐳖𐳛𐳘𐳦𐳛𐳖 𐳦𐳁𐳦𐳛𐳍
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Bocah iku angob terus ing kelas</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦧꦺꦴꦕꦃꦲꦶꦏꦸꦲꦔꦺꦴꦧ꧀ꦠꦼꦫꦸꦱ꧀ꦲꦶꦁꦏꦼꦭꦱ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A gyerek folyton ásít az órán</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳎𐳉𐳢𐳉𐳓 𐳌𐳛𐳖𐳦𐳛𐳙 𐳁𐳤𐳑𐳦 𐳀𐳯 𐳛𐳢𐳁𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ngapuk</orth>
+		    <orth script="Jv">ꦔꦥꦸꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ngapuk">
+          <orth script="Latin">ngapuk</orth>
+          <orth script="Jv">ꦔꦥꦸꦏ꧀</orth>
+        </ref>
+      </note>
+</entry>

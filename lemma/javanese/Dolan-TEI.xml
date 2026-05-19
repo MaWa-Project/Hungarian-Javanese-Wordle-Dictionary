@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="dolan">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">dolan</orth>
+        <orth xml:lang="Jv" script="Jv">ꦢꦺꦴꦭꦤ꧀</orth>
+        <pron>
+          <syllabic>do·lan</syllabic>
+          <ipa>[\text{dolɑn}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">dolan-dolan</orth>
+            <orth xml:lang="Jv" script="Jv">ꦢꦺꦴꦭꦤ꧀ꦢꦺꦴꦭꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">látogat</orth>
+          <orth script="Runic">𐳖𐳁𐳦𐳛𐳍𐳀𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">kirándul</orth>
+          <orth script="Runic">𐳓𐳐𐳢𐳁𐳙𐳇𐳪𐳖</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	szórakozásból utazik vagy látogatóba megy
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳥𐳜𐳢𐳀𐳓𐳛𐳯𐳁𐳤𐳁𐳖 𐳪𐳦𐳀𐳯𐳐𐳓 𐳮𐳀𐳎 𐳖𐳁𐳦𐳛𐳍𐳀𐳦𐳛𐳁𐳀 𐳘𐳉𐳎
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aku arep dolan menyang omahé mbah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦲꦉꦥ꧀ꦢꦺꦴꦭꦤ꧀ꦩꦼꦚꦁꦲꦺꦴꦩꦃꦲꦺꦩ꧀ꦧꦃ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Elmegyek meglátogatni a nagyszüleimet</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳉𐳖𐳘𐳉𐳎𐳉𐳓 𐳘𐳉𐳍𐳖𐳁𐳦𐳛𐳍𐳀𐳦𐳙𐳐 𐳀 𐳙𐳀𐳍𐳥𐳬𐳖𐳉𐳐𐳘𐳉𐳦
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ameng-ameng</orth>
+		    <orth script="Jv">ꦲꦩꦼꦁꦲꦩꦼꦁ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ameng-ameng">
+          <orth script="Latin">ameng-ameng</orth>
+          <orth script="Jv">ꦲꦩꦼꦁꦲꦩꦼꦁ</orth>
+        </ref>
+      </note>
+</entry>

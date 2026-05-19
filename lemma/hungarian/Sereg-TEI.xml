@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="sereg">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">sereg</orth>
+        <orth xml:lang="Hu" script="Runic">𐳤𐳉𐳢𐳉𐳍</orth>
+        <pron>
+          <syllabic>se·reg</syllabic>
+          <ipa>[\\text{ʃɛrɛɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ek</orth>
+            <orth xml:lang="Hu" script="Runic">𐳉𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">tentara</orth>
+          <orth script="Jv">ꦠꦺꦤ꧀ꦠꦫ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">wadyabala</orth>
+          <orth script="Jv">ꦮꦢꦾꦧꦭ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	wong-wong sing dadi prajurit lan dilatih kanggo perang
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦮꦺꦴꦁꦮꦺꦴꦁꦱꦶꦁꦢꦢꦶꦥꦿꦗꦸꦫꦶꦠ꧀ꦭꦤ꧀ꦢꦶꦭꦠꦶꦃꦏꦁꦒꦺꦴꦥꦼꦫꦁ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A sereg a határon áll</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳤𐳉𐳢𐳉𐳍 𐳀 𐳏𐳀𐳦𐳁𐳢𐳛𐳙 𐳁𐳖𐳖
+        </quote>
+        <quote xml:lang="Jv" script="Latin">tentara ngadeg ing wates</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦠꦺꦤ꧀ꦠꦫꦔꦢꦼꦒ꧀ꦲꦶꦁꦮꦠꦼꦱ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">hadsereg</orth>
+            <orth script="Runic">𐳏𐳀𐳇𐳤𐳉𐳢𐳉𐳍</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-vezér</orth>
+            <orth script="Runic">𐳮𐳉𐳯𐳋𐳢-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#katona">
+          <orth script="Latin">katona</orth>
+          <orth script="Runic">𐳓𐳀𐳦𐳛𐳙𐳀</orth>
+        </ref>
+      </note>
+</entry>

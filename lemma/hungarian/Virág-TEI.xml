@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="virág">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">virág</orth>
+        <orth xml:lang="Hu" script="Runic">𐳮𐳐𐳢𐳁𐳍</orth>
+        <pron>
+          <syllabic>vi·rág</syllabic>
+          <ipa>[\\text{viraːɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kembang</orth>
+          <orth script="Jv">ꦏꦼꦩ꧀ꦧꦁ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">sekar</orth>
+          <orth script="Jv">ꦱꦼꦏꦂ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	bagéan tetuwuhan sing éndah lan ana wernané
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦒꦺꦪꦤ꧀ꦠꦼꦠꦸꦮꦸꦃꦲꦤ꧀ꦱꦶꦁꦲꦺꦤ꧀ꦣꦃꦭꦤ꧀ꦲꦤꦮꦼꦂꦤꦤꦺ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A virág szép a kertben</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳮𐳐𐳢𐳁𐳍 𐳥𐳋𐳠 𐳀 𐳓𐳉𐳢𐳦𐳂𐳉𐳙
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kembang kuwi endah ing patamanan</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦼꦩ꧀ꦧꦁꦏꦸꦮꦶꦲꦺꦤ꧀ꦣꦃꦲꦶꦁꦥꦠꦩꦤ꧀ꦤꦤ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">szobanövény</orth>
+            <orth script="Runic">𐳥𐳛𐳂𐳀𐳙𐳞𐳮𐳋𐳚</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ágy</orth>
+            <orth script="Runic">𐳁𐳎-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#növény">
+          <orth script="Latin">növény</orth>
+          <orth script="Runic">𐳙𐳞𐳮𐳋𐳚</orth>
+        </ref>
+      </note>
+</entry>

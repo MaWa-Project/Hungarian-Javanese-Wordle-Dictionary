@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="álmos">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">álmos</orth>
+        <orth xml:lang="Hu" script="Runic">𐳁𐳖𐳘𐳛𐳤</orth>
+        <pron>
+          <syllabic>ál·mos</syllabic>
+          <ipa>[\\text{aːlmoʃ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-abb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳀𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">ngantuk</orth>
+          <orth script="Jv">ꦔꦤ꧀ꦠꦸꦏ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">arip</orth>
+          <orth script="Jv">ꦄꦫꦶꦥ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kepéngin turu utawa krasa arep turu
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦼꦥꦺꦔꦶꦤ꧀ꦠꦸꦫꦸꦲꦸꦠꦮꦏꦿꦱꦲꦉꦥ꧀ꦠꦸꦫꦸ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Álmos vagyok este</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲁𐳖𐳘𐳛𐳤 𐳮𐳀𐳎𐳛𐳓 𐳉𐳤𐳦𐳉
+        </quote>
+        <quote xml:lang="Jv" script="Latin">aku ngantuk ing wayah bengi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦔꦤ꧀ꦠꦸꦏ꧀ꦲꦶꦁꦮꦪꦃꦧꦼꦔꦶ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">szendergős</orth>
+            <orth script="Runic">𐳥𐳉𐳙𐳇𐳉𐳢𐳍𐳟𐳤</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-könyv</orth>
+            <orth script="Runic">𐳓𐳞𐳚𐳮-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#alvás">
+          <orth script="Latin">alvás</orth>
+          <orth script="Runic">𐳀𐳖𐳮𐳁𐳤</orth>
+        </ref>
+      </note>
+</entry>

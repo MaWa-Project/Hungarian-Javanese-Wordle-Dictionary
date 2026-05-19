@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="cilik">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">cilik</orth>
+        <orth xml:lang="Jv" script="Jv">ꦕꦶꦭꦶꦏ꧀</orth>
+        <pron>
+          <syllabic>ci·lik</syllabic>
+          <ipa>[\text{tʃiliʔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">cilik-cilik</orth>
+            <orth xml:lang="Jv" script="Jv">ꦕꦶꦭꦶꦏ꧀ꦕꦶꦭꦶꦏ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">kicsi</orth>
+          <orth script="Runic">𐳓𐳐𐳖𐳤𐳐</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">apró</orth>
+          <orth script="Runic">𐳀𐳠𐳢𐳜</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	kis méretű, nem nagy darab
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳓𐳐𐳤 𐳘𐳋𐳢𐳉𐳦𐳭, 𐳙𐳉𐳘 𐳙𐳀𐳎 𐳇𐳀𐳢𐳀𐳁
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Omah cilik iki apik lan murah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦺꦴꦩꦃꦕꦶꦭꦶꦏ꧀ꦲꦶꦏꦶꦲꦥꦶꦏ꧀ꦭꦤ꧀ꦩꦸꦫꦃ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Ez a kis ház nagyon olcsó</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳉𐳯 𐳀 𐳓𐳐𐳤 𐳏𐳁𐳯 𐳙𐳀𐳎𐳛𐳙 𐳛𐳖𐳖𐳤𐳜
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">alit</orth>
+		    <orth script="Jv">ꦲꦭꦶꦠ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#alit">
+          <orth script="Latin">alit</orth>
+          <orth script="Jv">ꦲꦭꦶꦠ꧀</orth>
+        </ref>
+      </note>
+</entry>

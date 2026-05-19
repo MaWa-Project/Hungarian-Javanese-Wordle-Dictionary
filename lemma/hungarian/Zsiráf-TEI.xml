@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="zsiráf">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">zsiráf</orth>
+        <orth xml:lang="Hu" script="Runic">𐳰𐳐𐳢𐳁𐳌</orth>
+        <pron>
+          <syllabic>zsi·ráf</syllabic>
+          <ipa>[\\text{ʒiraːf}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">jerapah</orth>
+          <orth script="Jv">ꦗꦼꦫꦥꦃ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">jerapah</orth>
+          <orth script="Jv">ꦗꦼꦫꦥꦃ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kéwan gulu dawa lan sikilé dawa
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦺꦮꦤ꧀ꦒꦸꦭꦸꦢꦮꦭꦤ꧀ꦱꦶꦏꦶꦭꦺꦢꦮ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A zsiráf a legmagasabb állat</quote>
+		<quote xml:lang="Hu" script="Runic">
+          𐲀 𐳰𐳐𐳢𐳁𐳌 𐳀 𐳖𐳉𐳍𐳘𐳀𐳍𐳀𐳤𐳀𐳂𐳂 𐳁𐳖𐳖𐳀𐳦
+        </quote>
+        <quote xml:lang="Jv" script="Latin">jerapah kuwi kéwan paling dhuwur</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦗꦼꦫꦥꦃꦏꦸꦮꦶꦏꦺꦮꦤ꧀ꦥꦭꦶꦁꦣꦸꦮꦸꦂ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">tevepárduc</orth>
+            <orth script="Runic">𐳦𐳉𐳮𐳉𐳠𐳁𐳢𐳇𐳪𐳄</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-nyakú</orth>
+            <orth script="Runic">𐳚𐳀𐳓𐳫-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#nyak">
+          <orth script="Latin">nyak</orth>
+          <orth script="Runic">𐳚𐳀𐳓</orth>
+        </ref>
+      </note>
+</entry>

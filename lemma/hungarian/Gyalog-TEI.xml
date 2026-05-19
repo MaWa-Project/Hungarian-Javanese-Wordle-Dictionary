@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="gyalog">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">gyalog</orth>
+        <orth xml:lang="Hu" script="Runic">𐳎𐳀𐳖𐳛𐳍</orth>
+        <pron>
+          <syllabic>gya·log</syllabic>
+          <ipa>[\\text{ɟɒloɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adverb</pos>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mlaku</orth>
+          <orth script="Jv">ꦩ꧀ꦭꦏꦸ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mlampah</orth>
+          <orth script="Jv">ꦩ꧀ꦭꦩ꧀ꦥꦃ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	lelungan nganggo sikil tanpa nganggo kendharaan
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦊꦭꦸꦔꦤ꧀ꦔꦁꦒꦺꦴꦱꦶꦏꦶꦭ꧀ꦠꦤ꧀ꦥꦔꦁꦒꦺꦴꦏꦼꦤ꧀ꦝꦫꦤ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Gyalog megyek az iskolába</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲎𐳀𐳖𐳛𐳍 𐳘𐳉𐳎𐳉𐳓 𐳀𐳯 𐳐𐳤𐳓𐳛𐳖𐳁𐳂𐳀
+        </quote>
+        <quote xml:lang="Jv" script="Latin">aku mlaku menyang sekolah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦩ꧀ꦭꦏꦸꦩꦼꦤꦪꦁꦱꦼꦏꦺꦴꦭꦃ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">lábon</orth>
+            <orth script="Runic">𐳖𐳁𐳂𐳛𐳙</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-út</orth>
+            <orth script="Runic">𐳫𐳦-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#láb">
+          <orth script="Latin">láb</orth>
+          <orth script="Runic">𐳖𐳁𐳂</orth>
+        </ref>
+      </note>
+</entry>

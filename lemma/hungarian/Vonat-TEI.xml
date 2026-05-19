@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="vonat">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">vonat</orth>
+        <orth xml:lang="Hu" script="Runic">𐳮𐳛𐳙𐳀𐳦</orth>
+        <pron>
+          <syllabic>vo·nat</syllabic>
+          <ipa>[\\text{vonɒt}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">sepur</orth>
+          <orth script="Jv">ꦱꦼꦥꦸꦂ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">sepur</orth>
+          <orth script="Jv">ꦱꦼꦥꦸꦂ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kendharaan ing rel sing kanggo ngangkut wong lan barang
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦺꦤ꧀ꦝꦫꦤ꧀ꦲꦶꦁꦫꦺꦭ꧀ꦱꦶꦁꦏꦁꦒꦸꦤ꧀ꦱꦶꦁꦤ꧀ꦒꦸꦁꦏꦸꦥꦸꦁꦮꦺꦴꦁꦭꦤ꧀ꦧꦫꦁ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A vonat hamar megérkezik</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳮𐳛𐳙𐳀𐳦 𐳏𐳀𐳘𐳀𐳢 𐳘𐳉𐳍𐳋𐳢𐳓𐳉𐳯𐳐𐳓
+        </quote>
+        <quote xml:lang="Jv" script="Latin">sepur kuwi teka cepet</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦱꦼꦥꦸꦂꦏꦸꦮꦶꦠꦼꦏꦕꦼꦥꦼꦠ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">vasút</orth>
+            <orth script="Runic">𐳮𐳀𐳤𐳫𐳦</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-állomás</orth>
+            <orth script="Runic">𐳁𐳖𐳖𐳛𐳘𐳁𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#pálya">
+          <orth script="Latin">pálya</orth>
+          <orth script="Runic">𐳠𐳁𐳗𐳀</orth>
+        </ref>
+      </note>
+</entry>

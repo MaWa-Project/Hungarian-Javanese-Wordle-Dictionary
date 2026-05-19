@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="gedhe">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">gedhe</orth>
+        <orth xml:lang="Jv" script="Jv">ꦒꦼꦝꦺ</orth>
+        <pron>
+          <syllabic>ge·dhe</syllabic>
+          <ipa>[\text{ɡəɖɛ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">gedhe-gedhe</orth>
+            <orth xml:lang="Jv" script="Jv">ꦒꦼꦝꦺꦒꦼꦝꦺ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">nagy</orth>
+          <orth script="Runic">𐳙𐳀𐳎</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">óriási</orth>
+          <orth script="Runic">𐳜𐳢𐳐𐳁𐳤𐳐</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	nagy méretű, nem kicsi
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳙𐳀𐳎 𐳘𐳋𐳢𐳉𐳦𐳭, 𐳙𐳉𐳘 𐳓𐳐𐳖𐳤𐳐
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Omah gedhe iki larang banget regane</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦺꦴꦩꦃꦒꦼꦝꦺꦲꦶꦏꦶꦭꦫꦁꦧꦔꦼꦠ꧀ꦉꦒꦤꦺ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Ez a nagy ház nagyon drága</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳉𐳯 𐳀 𐳙𐳀𐳎 𐳏𐳁𐳯 𐳙𐳀𐳎𐳛𐳙 𐳇𐳢𐳁𐳍𐳀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ageng</orth>
+		    <orth script="Jv">ꦲꦒꦼꦁ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ageng">
+          <orth script="Latin">ageng</orth>
+          <orth script="Jv">ꦲꦒꦼꦁ</orth>
+        </ref>
+      </note>
+</entry>

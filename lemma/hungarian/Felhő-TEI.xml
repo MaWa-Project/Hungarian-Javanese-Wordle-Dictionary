@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="felhő">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">felhő</orth>
+        <orth xml:lang="Hu" script="Runic">𐳌𐳉𐳖𐳏𐳟</orth>
+        <pron>
+          <syllabic>fel·hő</syllabic>
+          <ipa>[\\text{fɛlɦøː}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-k</orth>
+            <orth xml:lang="Hu" script="Runic">𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mendhung</orth>
+          <orth script="Jv">ꦩꦼꦤ꧀ꦝꦸꦁ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mendhung</orth>
+          <orth script="Jv">ꦩꦼꦤ꧀ꦝꦸꦁ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kumpulan banyu cilik ing langit sing katon putih utawa abu-abu
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦸꦩ꧀ꦥꦸꦭ꧀ꦭꦤ꧀ꦧꦚꦸꦕꦶꦭꦶꦏ꧀ꦲꦶꦁꦭꦔꦶꦠ꧀ꦱꦶꦁꦏꦠꦺꦴꦤ꧀ꦥꦸꦠꦶꦃꦲꦸꦠꦮꦲꦧꦸꦲꦧꦸ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A felhő az égen úszik</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳌𐳉𐳖𐳏𐳟 𐳀𐳯 𐳋𐳍𐳉𐳙 𐳫𐳥𐳐𐳓
+        </quote>
+        <quote xml:lang="Jv" script="Latin">mendhung kuwi ngambang ing langit</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦩꦼꦤ꧀ꦝꦸꦁꦏꦸꦮꦶꦔꦩ꧀ꦧꦁꦲꦶꦁꦭꦔꦶꦠ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">felleg</orth>
+            <orth script="Runic">𐳌𐳉𐳖𐳖𐳉𐳍</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-kép</orth>
+            <orth script="Runic">𐳓𐳋𐳠-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ég">
+          <orth script="Latin">ég</orth>
+          <orth script="Runic">𐳋𐳍</orth>
+        </ref>
+      </note>
+</entry>

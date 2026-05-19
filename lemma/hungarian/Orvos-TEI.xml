@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="orvos">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">orvos</orth>
+        <orth xml:lang="Hu" script="Runic">𐳛𐳢𐳮𐳛𐳤</orth>
+        <pron>
+          <syllabic>or·vos</syllabic>
+          <ipa>[\\text{orvoʃ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">dhokter</orth>
+          <orth script="Jv">ꦝꦺꦴꦏ꧀ꦠꦼꦂ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">dhokter</orth>
+          <orth script="Jv">ꦝꦺꦴꦏ꧀ꦠꦼꦂ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	wong sing nambani wong lara nganggo ilmu kedhokteran
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦮꦺꦴꦁꦱꦶꦁꦤꦩ꧀ꦧꦤꦶꦮꦺꦴꦁꦭꦫꦔꦁꦒꦺꦴꦲꦶꦭ꧀ꦩꦸꦏꦼꦝꦺꦴꦏ꧀ꦠꦼꦂꦫꦤ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Az orvos gyógyítja a beteget</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳛𐳢𐳮𐳛𐳤 𐳎𐳜𐳎𐳑𐳦𐳒𐳀 𐳀 𐳂𐳉𐳦𐳉𐳍𐳉𐳦
+        </quote>
+        <quote xml:lang="Jv" script="Latin">dhokter nambani wong lara</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦝꦺꦴꦏ꧀ꦠꦼꦂꦤꦩ꧀ꦧꦤꦶꦮꦺꦴꦁꦭꦫ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">doktor</orth>
+            <orth script="Runic">𐳇𐳛𐳓𐳦𐳛𐳢</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-nő</orth>
+            <orth script="Runic">𐳙𐳟-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#gyógy">
+          <orth script="Latin">gyógy</orth>
+          <orth script="Runic">𐳎𐳜𐳎</orth>
+        </ref>
+      </note>
+</entry>

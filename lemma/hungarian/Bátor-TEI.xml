@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="bátor">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">bátor</orth>
+        <orth xml:lang="Hu" script="Runic">𐳂𐳁𐳦𐳛𐳢</orth>
+        <pron>
+          <syllabic>bá·tor</syllabic>
+          <ipa>[\\text{baːtor}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-bb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kendel</orth>
+          <orth script="Jv">ꦏꦼꦤ꧀ꦢꦼꦭ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">wantun</orth>
+          <orth script="Jv">ꦮꦤ꧀ꦠꦸꦤ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	wong sing ora wedi ngadhepi bebaya
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦮꦺꦴꦁꦱꦶꦁꦲꦺꦴꦫꦮꦼꦢꦶꦔꦝꦼꦥꦶꦧꦼꦧꦪ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A bátor ember nem fél</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳂𐳁𐳦𐳛𐳢 𐳉𐳘𐳂𐳉𐳢 𐳙𐳉𐳘 𐳌𐳋𐳖
+        </quote>
+        <quote xml:lang="Jv" script="Latin">wong kendel kuwi ora wedi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦺꦴꦁꦏꦼꦤ꧀ꦢꦼꦭ꧀ꦏꦸꦮꦶꦲꦺꦴꦫꦮꦼꦢꦶ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">merész</orth>
+            <orth script="Runic">𐳘𐳉𐳢𐳋𐳥</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-szívű</orth>
+            <orth script="Runic">𐳥𐳑𐳮𐳭-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#bátorság">
+          <orth script="Latin">bátorság</orth>
+          <orth script="Runic">𐳂𐳁𐳦𐳛𐳢𐳤𐳁𐳍</orth>
+        </ref>
+      </note>
+</entry>

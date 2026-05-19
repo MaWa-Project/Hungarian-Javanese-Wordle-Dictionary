@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="zenei">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">zenei</orth>
+        <orth xml:lang="Hu" script="Runic">𐳯𐳉𐳙𐳉𐳐</orth>
+        <pron>
+          <syllabic>ze·nei</syllabic>
+          <ipa>[\\text{zɛnɛi}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-bb</orth>
+            <orth xml:lang="Hu" script="Runic">-𐳂𐳂</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">musikal</orth>
+          <orth script="Jv">ꦩꦸꦱꦶꦏꦭ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">musikal</orth>
+          <orth script="Jv">ꦩꦸꦱꦶꦏꦭ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	sing gegayutan karo musik
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦱꦶꦁꦒꦼꦒꦪꦸꦠꦤ꧀ꦏꦫꦺꦴꦩꦸꦱꦶꦏ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A zenei hangulat szép volt</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳯𐳉𐳙𐳉𐳐 𐳏𐳀𐳙𐳍𐳪𐳖𐳀𐳦 𐳥𐳋𐳠 𐳮𐳛𐳖𐳦
+        </quote>
+        <quote xml:lang="Jv" script="Latin">swasana musikal kuwi endah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦱ꧀ꦮꦱꦤꦩꦸꦱꦶꦏꦭ꧀ꦏꦸꦮꦶꦄꦼꦤ꧀ꦝꦃ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">muzsikális</orth>
+            <orth script="Runic">𐳘𐳪𐳰𐳐𐳓𐳁𐳖𐳐𐳤</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-iskola</orth>
+            <orth script="Runic">𐳐𐳤𐳓𐳛𐳖𐳀-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#zene">
+          <orth script="Latin">zene</orth>
+          <orth script="Runic">𐳯𐳉𐳙𐳉</orth>
+        </ref>
+      </note>
+</entry>

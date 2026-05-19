@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="embun">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">embun</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦼꦩ꧀ꦧꦸꦤ꧀</orth>
+        <pron>
+          <syllabic>em·bun</syllabic>
+          <ipa>[\text{əmbʊn}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-embun</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦲꦼꦩ꧀ꦧꦸꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">harmat</orth>
+          <orth script="Runic">𐳏𐳀𐳢𐳘𐳀𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">harmatcsepp</orth>
+          <orth script="Runic">𐳏𐳀𐳢𐳘𐳀𐳦𐳖𐳉𐳠𐳠</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	reggeli vízcsepp a növényeken
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳢𐳉𐳍𐳉𐳖𐳐 𐳮𐳑𐳯𐳖𐳉𐳠𐳠 𐳀 𐳙𐳟𐳮𐳋𐳚𐳉𐳓𐳉𐳙
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Embun esuk iku adhem lan resik</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦼꦩ꧀ꦧꦸꦤ꧀ꦲꦺꦱꦸꦏ꧀ꦲꦶꦏꦸꦲꦢꦼꦩ꧀ꦭꦤ꧀ꦉꦱꦶꦏ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A reggeli harmat hideg és tiszta</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳢𐳉𐳍𐳉𐳖𐳐 𐳏𐳀𐳢𐳘𐳀𐳦 𐳏𐳐𐳇𐳉𐳍 𐳋𐳤 𐳦𐳐𐳤𐳦𐳀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">bun</orth>
+		    <orth script="Jv">ꦧꦸꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-esuk</orth>
+            <orth script="Jv">-ꦲꦺꦱꦸꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#bun">
+          <orth script="Latin">bun</orth>
+          <orth script="Jv">ꦧꦸꦤ꧀</orth>
+        </ref>
+      </note>
+</entry>

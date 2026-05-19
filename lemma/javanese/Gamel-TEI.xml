@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="gamel">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">gamel</orth>
+        <orth xml:lang="Jv" script="Jv">ꦒꦩꦼꦭ꧀</orth>
+        <pron>
+          <syllabic>ga·mel</syllabic>
+          <ipa>[\text{ɡaməl}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-gamel</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦒꦩꦼꦭ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">gamelán</orth>
+          <orth script="Runic">𐳍𐳀𐳘𐳉𐳖𐳁𐳙</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ütőhangszer</orth>
+          <orth script="Runic">𐳬𐳦𐳟𐳏𐳀𐳙𐳍𐳉𐳢</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	jávai hagyományos ütőhangszerek összessége
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳒𐳁𐳮𐳀𐳐 𐳏𐳀𐳎𐳛𐳘𐳀𐳚𐳛𐳤 𐳬𐳦𐳟𐳏𐳀𐳙𐳍𐳋𐳢𐳉𐳓 𐳟𐳤𐳥𐳋𐳤𐳋𐳍𐳉
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Gamelan iku dienggo iringan tari Jawa</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦒꦩꦼꦭ꧀ꦭꦤ꧀ꦲꦶꦏꦸꦢꦶꦲꦼꦁꦒꦺꦴꦲꦶꦫꦶꦁꦔꦤ꧀ꦠꦫꦶꦗꦮ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A gamelán kíséri a táncelőadást</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳍𐳀𐳘𐳉𐳖𐳁𐳙 𐳓𐳐𐳤𐳋𐳢𐳐 𐳀 𐳦𐳁𐳙𐳖𐳉𐳖𐳟𐳀𐳇𐳀𐳤𐳦
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">gamelan</orth>
+		    <orth script="Jv">ꦒꦩꦼꦭ꧀ꦭꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#gamelan">
+          <orth script="Latin">gamelan</orth>
+          <orth script="Jv">ꦒꦩꦼꦭ꧀ꦭꦤ꧀</orth>
+        </ref>
+      </note>
+</entry>

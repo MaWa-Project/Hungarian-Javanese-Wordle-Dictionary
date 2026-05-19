@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="sirály">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">sirály</orth>
+        <orth xml:lang="Hu" script="Runic">𐳤𐳐𐳢𐳁𐳗</orth>
+        <pron>
+          <syllabic>si·rály</syllabic>
+          <ipa>[\\text{ʃiraːj}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">camar</orth>
+          <orth script="Jv">ꦕꦩꦂ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">manuk laut</orth>
+          <orth script="Jv">ꦩꦤꦸꦏ꧀ꦭꦲꦸꦠ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	manuk putih sing urip ing pinggir segara
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦩꦤꦸꦏ꧀ꦥꦸꦠꦶꦃꦱꦶꦁꦲꦸꦫꦶꦥ꧀ꦲꦶꦁꦥꦶꦁꦒꦶꦂꦱꦼꦒꦫ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A sirály a tenger fölött száll</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳤𐳐𐳢𐳁𐳗 𐳀 𐳦𐳉𐳙𐳍𐳉𐳢 𐳌𐳞𐳖𐳞𐳦𐳦 𐳥𐳁𐳖𐳖
+        </quote>
+        <quote xml:lang="Jv" script="Latin">camar mabur ing dhuwur segara</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦕꦩꦂꦩꦧꦸꦂꦲꦶꦁꦝꦸꦮꦸꦂꦱꦼꦒꦫ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">halász</orth>
+            <orth script="Runic">𐳏𐳀𐳖𐳁𐳤𐳯</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-toll</orth>
+            <orth script="Runic">𐳦𐳛𐳖𐳖-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#tenger">
+          <orth script="Latin">tenger</orth>
+          <orth script="Runic">𐳦𐳉𐳙𐳍𐳉𐳢</orth>
+        </ref>
+      </note>
+</entry>

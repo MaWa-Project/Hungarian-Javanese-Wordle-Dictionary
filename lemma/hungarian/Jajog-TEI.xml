@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="jajog">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">jajog</orth>
+        <orth xml:lang="Hu" script="Runic">𐳒𐳀𐳒𐳛𐳍</orth>
+        <pron>
+          <syllabic>ja·jog</syllabic>
+          <ipa>[\\text{jɒjoɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="imperative">
+            <orth xml:lang="Hu" script="Latin">-j</orth>
+            <orth xml:lang="Hu" script="Runic">𐳒-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">nggereng</orth>
+          <orth script="Jv">ꦔ꧀ꦒꦼꦫꦼꦁ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">ngesah</orth>
+          <orth script="Jv">ꦔꦼꦱꦃ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	ngetokaké swara amarga lara utawa sedhih
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦔꦼꦠꦺꦴꦏ꧀ꦏꦏꦺꦱ꧀ꦮꦫꦲꦩꦂꦒꦭꦫꦲꦸꦠꦮꦱꦼꦝꦶꦃ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A beteg jajog</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳂𐳉𐳦𐳉𐳍 𐳒𐳀𐳒𐳛𐳍
+        </quote>
+        <quote xml:lang="Jv" script="Latin">wong lara nggereng</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦺꦴꦁꦭꦫꦔ꧀ꦒꦼꦫꦼꦁ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">nyög</orth>
+            <orth script="Runic">𐳚𐳞𐳍</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ás</orth>
+            <orth script="Runic">𐳁𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#jaj">
+          <orth script="Latin">jaj</orth>
+          <orth script="Runic">𐳒𐳀𐳒</orth>
+        </ref>
+      </note>
+</entry>

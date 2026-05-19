@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="nyitva">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">nyitva</orth>
+        <orth xml:lang="Hu" script="Runic">𐳚𐳐𐳦𐳮𐳀</orth>
+        <pron>
+          <syllabic>nyit·va</syllabic>
+          <ipa>[\\text{ɲitvɒ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adverb</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-bb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mbukak</orth>
+          <orth script="Jv">ꦩ꧀ꦧꦸꦏꦏ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mbikak</orth>
+          <orth script="Jv">ꦩ꧀ꦧꦶꦏꦏ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	ora ditutup, supaya bisa mlebu utawa metu
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦲꦺꦴꦫꦢꦶꦠꦸꦠꦸꦥ꧀ꦱꦸꦥꦪꦧꦶꦱꦩ꧀ꦊꦧꦸꦲꦸꦠꦮꦩꦼꦠꦸ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A bolt nyitva van</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳂𐳛𐳖𐳦 𐳚𐳐𐳦𐳮𐳀 𐳮𐳀𐳙
+        </quote>
+        <quote xml:lang="Jv" script="Latin">tokone mbukak</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦠꦺꦴꦏꦺꦴꦤꦺꦩ꧀ꦧꦸꦏꦏ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">nyitott</orth>
+            <orth script="Runic">𐳚𐳐𐳦𐳛𐳦𐳦</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-tartás</orth>
+            <orth script="Runic">𐳦𐳀𐳢𐳦𐳁𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#nyit">
+          <orth script="Latn">nyit</orth>
+          <orth script="Runic">𐳚𐳐𐳦</orth>
+        </ref>
+      </note>
+</entry>

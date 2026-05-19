@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="eling">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">eling</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦼꦭꦶꦁ</orth>
+        <pron>
+          <syllabic>e·ling</syllabic>
+          <ipa>[\text{əliŋ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">eling-eling</orth>
+            <orth xml:lang="Jv" script="Jv">ꦲꦼꦭꦶꦁꦲꦼꦭꦶꦁ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">emlékszik</orth>
+          <orth script="Runic">𐳉𐳘𐳖𐳋𐳓𐳤𐳐𐳓</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">eszébe jut</orth>
+          <orth script="Runic">𐳉𐳥𐳋𐳁𐳉 𐳒𐳪𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	emlékezetében tart, nem felejt
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳉𐳘𐳖𐳋𐳓𐳉𐳯𐳉𐳁𐳉𐳙 𐳦𐳀𐳢𐳦, 𐳙𐳉𐳘 𐳌𐳉𐳖𐳉𐳒𐳦
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aku kudu eling marang janji wingi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦏꦸꦢꦲꦼꦭꦶꦁꦩꦫꦁꦗꦚ꧀ꦗꦶꦮꦶꦔꦶ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Emlékeznem kell a tegnapi ígéretre</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳉𐳘𐳖𐳋𐳓𐳉𐳯𐳙𐳉𐳘 𐳓𐳉𐳖𐳖 𐳀 𐳦𐳉𐳍𐳋𐳀𐳠𐳐 𐳑𐳍𐳋𐳢𐳉𐳦𐳢𐳉
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ngélingi</orth>
+		    <orth script="Jv">ꦔꦼꦭꦶꦔꦶ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ngélingi">
+          <orth script="Latin">ngélingi</orth>
+          <orth script="Jv">ꦔꦼꦭꦶꦔꦶ</orth>
+        </ref>
+      </note>
+</entry>

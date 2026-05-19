@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="igény">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">igény</orth>
+        <orth xml:lang="Hu" script="Runic">𐳐𐳍𐳋𐳚</orth>
+        <pron>
+          <syllabic>i·gény</syllabic>
+          <ipa>[\\text{iɡeːɲ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ek</orth>
+            <orth xml:lang="Hu" script="Runic">𐳉𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kabutuhan</orth>
+          <orth script="Jv">ꦏꦧꦸꦠꦸꦲꦤ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kabetahan</orth>
+          <orth script="Jv">ꦏꦧꦼꦠꦲꦤ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	bab sing dibutuhaké utawa dikarepaké
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦧ꧀ꦱꦶꦁꦢꦶꦧꦸꦠꦸꦲꦏꦺꦲꦸꦠꦮꦢꦶꦏꦉꦥ꧀ꦥꦏꦺ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Az igény magas</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳐𐳍𐳋𐳚 𐳘𐳀𐳍𐳀𐳤
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kabutuhan kuwi dhuwur</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦧꦸꦠꦸꦲꦤ꧀ꦏꦸꦮꦶꦣꦸꦮꦸꦂ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">szükséglet</orth>
+            <orth script="Runic">𐳥𐳬𐳓𐳤𐳋𐳍𐳖𐳉𐳦</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-szint</orth>
+            <orth script="Runic">𐳥𐳐𐳙𐳦-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#szükség">
+          <orth script="Latin">szükség</orth>
+          <orth script="Runic">𐳥𐳬𐳓𐳤𐳋𐳍</orth>
+        </ref>
+      </note>
+</entry>

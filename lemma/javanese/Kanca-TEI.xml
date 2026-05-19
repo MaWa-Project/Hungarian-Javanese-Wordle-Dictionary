@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="kanca">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">kanca</orth>
+        <orth xml:lang="Jv" script="Jv">ꦏꦚ꧀ꦕ</orth>
+        <pron>
+          <syllabic>kan·ca</syllabic>
+          <ipa>[\text{kɔɲtʃɔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-kanca</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦏꦚ꧀ꦕ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">barát</orth>
+          <orth script="Runic">𐳁𐳀𐳢𐳁𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">társ</orth>
+          <orth script="Runic">𐳦𐳁𐳢𐳤</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	baráti viszonyban lévő személy
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳁𐳀𐳢𐳁𐳦𐳐 𐳮𐳐𐳤𐳛𐳚𐳀𐳙𐳁𐳀𐳙 𐳖𐳋𐳮𐳟 𐳥𐳉𐳘𐳋𐳗
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Kancaku apik banget</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦚ꧀ꦕꦏꦸꦲꦥꦶꦏ꧀ꦧꦔꦼꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A barátom nagyon kedves</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳁𐳀𐳢𐳁𐳦𐳛𐳘 𐳙𐳀𐳎𐳛𐳙 𐳓𐳉𐳇𐳮𐳉𐳤
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">rencang</orth>
+		    <orth script="Jv">ꦉꦚ꧀ꦕꦁ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ku</orth>
+            <orth script="Jv">-ꦏꦸ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#rencang">
+          <orth script="Latin">rencang</orth>
+          <orth script="Jv">ꦉꦚ꧀ꦕꦁ</orth>
+        </ref>
+      </note>
+</entry>

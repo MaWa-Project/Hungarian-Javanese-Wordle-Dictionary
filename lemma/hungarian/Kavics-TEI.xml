@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="kavics">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">kavics</orth>
+        <orth xml:lang="Hu" script="Runic">𐳓𐳀𐳮𐳐𐳆</orth>
+        <pron>
+          <syllabic>ka·vics</syllabic>
+          <ipa>[\\text{kɒvitʃ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kerikil</orth>
+          <orth script="Jv">ꦏꦼꦫꦶꦏꦶꦭ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">batu alit</orth>
+          <orth script="Jv">ꦧꦠꦸꦲꦭꦶꦠ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	batu cilik sing biasané ana ing pinggir banyu
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦠꦸꦕꦶꦭꦶꦏ꧀ꦱꦶꦁꦧꦶꦪꦱꦤꦺꦲꦤꦲꦶꦁꦥꦶꦁꦒꦶꦂꦧꦚꦸ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A kavics a patakban van</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳀𐳮𐳐𐳆 𐳀 𐳠𐳀𐳦𐳀𐳓𐳂𐳀𐳙 𐳮𐳀𐳙
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kerikil ana ing kali</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦼꦫꦶꦏꦶꦭ꧀ꦲꦤꦲꦶꦁꦏꦭꦶ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">kő</orth>
+            <orth script="Runic">𐳓𐳟</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-darab</orth>
+            <orth script="Runic">𐳇𐳀𐳢𐳀𐳂-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#kő">
+          <orth script="Latin">kő</orth>
+          <orth script="Runic">𐳓𐳟</orth>
+        </ref>
+      </note>
+</entry>

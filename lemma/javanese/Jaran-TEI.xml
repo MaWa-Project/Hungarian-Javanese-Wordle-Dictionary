@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="jaran">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">jaran</orth>
+        <orth xml:lang="Jv" script="Jv">ꦗꦫꦤ꧀</orth>
+        <pron>
+          <syllabic>ja·ran</syllabic>
+          <ipa>[\text{dʒaran}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-jaran</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦗꦫꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ló</orth>
+          <orth script="Runic">𐳖𐳜</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">paripa</orth>
+          <orth script="Runic">𐳠𐳀𐳢𐳐𐳠𐳀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	négylábú állat lovaglásra és szállításra
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳙𐳋𐳎𐳚𐳖𐳁𐳁𐳫 𐳁𐳖𐳖𐳀𐳦 𐳖𐳛𐳮𐳀𐳍𐳖𐳁𐳤𐳢𐳀 𐳋𐳤 𐳥𐳁𐳖𐳖𐳐𐳦𐳁𐳤𐳢𐳀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Jaran mlaku alon nggawa barang abot</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦗꦫꦤ꧀ꦩ꧀ꦭꦏꦸꦲꦭꦺꦴꦤ꧀ꦔ꧀ꦒꦮꦧꦫꦁꦲꦧꦺꦴꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A ló lassan hordja a nehéz terhet</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳖𐳜 𐳖𐳀𐳤𐳤𐳀𐳙 𐳏𐳛𐳢𐳇𐳒𐳀 𐳀 𐳙𐳉𐳏𐳋𐳯 𐳦𐳉𐳢𐳏𐳉𐳦
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">kapal</orth>
+		    <orth script="Jv">ꦏꦥꦭ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#kapal">
+          <orth script="Latin">kapal</orth>
+          <orth script="Jv">ꦏꦥꦭ꧀</orth>
+        </ref>
+      </note>
+</entry>

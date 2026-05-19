@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="lyukas">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">lyukas</orth>
+        <orth xml:lang="Hu" script="Runic">𐳗𐳪𐳓𐳀𐳤</orth>
+        <pron>
+          <syllabic>lyu·kas</syllabic>
+          <ipa>[\\text{jukɒʃ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-bb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">bolong</orth>
+          <orth script="Jv">ꦧꦺꦴꦭꦺꦴꦁ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">bolong</orth>
+          <orth script="Jv">ꦧꦺꦴꦭꦺꦴꦁ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	barang sing ana bolongé utawa suwalé
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦫꦁꦱꦶꦁꦲꦤꦧꦺꦴꦭꦺꦴꦔꦺꦲꦸꦠꦮꦱꦸꦮꦭꦺ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A lyukas harisnya nem meleg</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳗𐳪𐳓𐳀𐳤 𐳏𐳀𐳢𐳐𐳤𐳚𐳀 𐳙𐳉𐳘 𐳘𐳉𐳖𐳉𐳍
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kaos sikil bolong kuwi ora panas</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦲꦺꦴꦱ꧀ꦱꦶꦏꦶꦭ꧀ꦧꦺꦴꦭꦺꦴꦁꦏꦸꦮꦶꦲꦺꦴꦫꦥꦤꦱ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">lukas</orth>
+            <orth script="Runic">𐳖𐳪𐳓𐳀𐳤</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-fog</orth>
+            <orth script="Runic">𐳌𐳛𐳍-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#lyuk">
+          <orth script="Latin">lyuk</orth>
+          <orth script="Runic">𐳗𐳪𐳓</orth>
+        </ref>
+      </note>
+</entry>

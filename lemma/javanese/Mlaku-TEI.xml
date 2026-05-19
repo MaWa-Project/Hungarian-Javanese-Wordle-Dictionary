@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="mlaku">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">mlaku</orth>
+        <orth xml:lang="Jv" script="Jv">ꦩ꧀ꦭꦏꦸ</orth>
+        <pron>
+          <syllabic>mla·ku</syllabic>
+          <ipa>[\text{mlaku}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">mlaku-mlaku</orth>
+            <orth xml:lang="Jv" script="Jv">ꦩ꧀ꦭꦏꦸꦩ꧀ꦭꦏꦸ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">jár</orth>
+          <orth script="Runic">𐳒𐳁𐳢</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">sétál</orth>
+          <orth script="Runic">𐳤𐳋𐳦𐳁𐳖</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	gyalog jár, lábbal halad
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳎𐳀𐳖𐳀𐳍 𐳒𐳁𐳢, 𐳖𐳁𐳁𐳀𐳖 𐳏𐳀𐳖𐳀𐳇
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aku mlaku menyang pasar</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦩ꧀ꦭꦏꦸꦩꦼꦚꦁꦥꦱꦂ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Én megyek a piacra</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳋𐳙 𐳘𐳉𐳎𐳉𐳓 𐳀 𐳠𐳐𐳀𐳖𐳢𐳀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">mlampah</orth>
+		    <orth script="Jv">ꦩ꧀ꦭꦩ꧀ꦥꦃ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-aku</orth>
+            <orth script="Jv">-ꦲꦏꦸ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#mlampah">
+          <orth script="Latin">mlampah</orth>
+          <orth script="Jv">ꦩ꧀ꦭꦩ꧀ꦥꦃ</orth>
+        </ref>
+      </note>
+</entry>

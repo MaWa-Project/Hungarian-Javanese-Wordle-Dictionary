@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="márka">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">márka</orth>
+        <orth xml:lang="Hu" script="Runic">𐳘𐳁𐳢𐳓𐳀</orth>
+        <pron>
+          <syllabic>már·ka</syllabic>
+          <ipa>[\\text{maːrkɒ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ák</orth>
+            <orth xml:lang="Hu" script="Runic">𐳁𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">merek</orth>
+          <orth script="Jv">ꦩꦺꦫꦺꦏ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">merek</orth>
+          <orth script="Jv">ꦩꦺꦫꦺꦏ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	jeneng utawa tandha kanggo mbedakake barang siji karo liyane
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦗꦼꦤꦼꦁꦲꦸꦠꦮꦠꦤ꧀ꦝꦏꦁꦒꦺꦴꦩ꧀ꦧꦼꦢꦏ꧀ꦏꦤꦺꦧꦫꦁꦱꦶꦗꦶꦏꦫꦺꦴꦭꦶꦪꦤꦺ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A márka nem olcsó</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳘𐳁𐳢𐳓𐳀 𐳙𐳉𐳘 𐳛𐳖𐳄𐳤𐳜
+        </quote>
+        <quote xml:lang="Jv" script="Latin">merek kuwi ora murah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦩꦺꦫꦺꦏ꧀ꦏꦸꦮꦶꦲꦺꦴꦫꦩꦸꦫꦃ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">védjegy</orth>
+            <orth script="Runic">𐳮𐳋𐳇𐳒𐳉𐳎</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-cédula</orth>
+            <orth script="Runic">𐳄𐳋𐳇𐳪𐳖𐳀-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#név">
+          <orth script="Latin">név</orth>
+          <orth script="Runic">𐳒𐳋𐳮</orth>
+        </ref>
+      </note>
+</entry>
