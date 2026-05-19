@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="werna">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">werna</orth>
+        <orth xml:lang="Jv" script="Jv">ꦮꦼꦂꦤ</orth>
+        <pron>
+          <syllabic>wer·na</syllabic>
+          <ipa>[\text{wərnɔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-werna</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦮꦼꦂꦤ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">szín</orth>
+          <orth script="Runic">𐳥𐳑𐳙</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">árnyalat</orth>
+          <orth script="Runic">𐳁𐳢𐳙𐳀𐳖𐳀𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	dolog felületének látható tulajdonsága
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳇𐳛𐳖𐳛𐳍 𐳌𐳉𐳖𐳬𐳖𐳋𐳙𐳉𐳓 𐳖𐳁𐳦𐳏𐳀𐳦𐳜 𐳦𐳪𐳖𐳀𐳒𐳇𐳛𐳙𐳤𐳁𐳍𐳀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Werna biru iki katon apik banget</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦼꦂꦤꦧꦶꦫꦸꦲꦶꦏꦶꦏꦠꦺꦴꦤ꧀ꦲꦥꦶꦏ꧀ꦧꦔꦼꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A kék szín nagyon szép</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳋𐳓 𐳥𐳐𐳙 𐳙𐳀𐳎𐳛𐳙 𐳥𐳋𐳠
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">warni</orth>
+		    <orth script="Jv">ꦮꦂꦤꦶ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#warni">
+          <orth script="Latin">warni</orth>
+          <orth script="Jv">ꦮꦂꦤꦶ</orth>
+        </ref>
+      </note>
+</entry>

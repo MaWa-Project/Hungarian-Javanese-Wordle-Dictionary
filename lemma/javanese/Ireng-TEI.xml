@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="ireng">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">ireng</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦶꦉꦁ</orth>
+        <pron>
+          <syllabic>i·reng</syllabic>
+          <ipa>[\text{irəŋ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">ireng-ireng</orth>
+            <orth xml:lang="Jv" script="Jv">ꦲꦶꦉꦁꦲꦶꦉꦁ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">fekete</orth>
+          <orth script="Runic">𐳌𐳉𐳓𐳉𐳦𐳉</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">sötét</orth>
+          <orth script="Runic">𐳤𐳟𐳦𐳋𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	legsötétebb szín, fekete színű
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳖𐳉𐳍𐳤𐳟𐳦𐳋𐳦𐳉𐳁𐳁 𐳥𐳐𐳙, 𐳌𐳉𐳓𐳉𐳦𐳉 𐳥𐳐𐳚𐳭
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Kucing ireng kui kancaku sing setya</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦸꦕꦶꦁꦲꦶꦉꦁꦏꦸꦮꦶꦏꦚ꧀ꦕꦏꦸꦱꦶꦁꦱꦼꦠꦾ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A fekete macska nagyon hűséges</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳌𐳉𐳓𐳉𐳦𐳉 𐳘𐳀𐳆𐳓𐳀 𐳙𐳀𐳎𐳛𐳙 𐳏𐳭𐳤𐳋𐳍𐳉𐳤
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">cemeng</orth>
+		    <orth script="Jv">ꦕꦼꦩꦼꦁ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#cemeng">
+          <orth script="Latin">cemeng</orth>
+          <orth script="Jv">ꦕꦼꦩꦼꦁ</orth>
+        </ref>
+      </note>
+</entry>

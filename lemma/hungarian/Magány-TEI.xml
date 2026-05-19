@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="magány">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">magány</orth>
+        <orth xml:lang="Hu" script="Runic">𐳘𐳀𐳍𐳁𐳚</orth>
+        <pron>
+          <syllabic>ma·gány</syllabic>
+          <ipa>[\\text{mɒɡaːɲ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kasepén</orth>
+          <orth script="Jv">ꦏꦱꦼꦥꦺꦤ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kasepén</orth>
+          <orth script="Jv">ꦏꦱꦼꦥꦺꦤ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	kahanan nalika wong ngrasa dhéwé lan ora ana kanca
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦏꦲꦤ꧀ꦤꦤ꧀ꦤꦭꦶꦏꦮꦺꦴꦁꦔꦿꦱꦝꦺꦮꦺꦭꦤ꧀ꦲꦺꦴꦫꦲꦤꦏꦚ꧀ꦕ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A magány nehéz érzés</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳘𐳀𐳍𐳁𐳚 𐳙𐳉𐳏𐳋𐳯 𐳋𐳢𐳯𐳋𐳤
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kasepén kuwi rasa sing abot</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦱꦼꦥꦺꦤ꧀ꦏꦸꦮꦶꦫꦱꦱꦶꦁꦲꦧꦺꦴꦠ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">egyedüllét</orth>
+            <orth script="Runic">𐳉𐳎𐳉𐳇𐳬𐳖𐳖𐳋𐳦</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-érzet</orth>
+            <orth script="Runic">𐳋𐳢𐳯𐳉𐳦-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#egyedül">
+          <orth script="Latin">egyedül</orth>
+          <orth script="Runic">𐳉𐳎𐳉𐳇𐳬𐳖</orth>
+        </ref>
+      </note>
+</entry>

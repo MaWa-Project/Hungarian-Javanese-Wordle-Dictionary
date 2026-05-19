@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="guyon">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">guyon</orth>
+        <orth xml:lang="Jv" script="Jv">ꦒꦸꦪꦺꦴꦤ꧀</orth>
+        <pron>
+          <syllabic>gu·yon</syllabic>
+          <ipa>[\text{ɡujɔn}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">guyon-guyon</orth>
+            <orth xml:lang="Jv" script="Jv">ꦒꦸꦪꦺꦴꦤ꧀ꦒꦸꦪꦺꦴꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">viccel</orth>
+          <orth script="Runic">𐳮𐳐𐳖𐳖𐳉𐳖</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">tréfál</orth>
+          <orth script="Runic">𐳦𐳢𐳋𐳌𐳁𐳖</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	vicceset mond, tréfálkozik
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳮𐳐𐳖𐳖𐳉𐳤𐳉𐳦 𐳘𐳛𐳙𐳇, 𐳦𐳢𐳋𐳌𐳁𐳖𐳓𐳛𐳯𐳐𐳓
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Kanca-kancaku seneng guyon nalika istirahat</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦚ꧀ꦕꦏꦚ꧀ꦕꦏꦸꦱꦼꦤꦼꦁꦒꦸꦪꦺꦴꦤ꧀ꦤꦭꦶꦏꦲꦶꦱ꧀ꦠꦶꦫꦃꦲꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A barátaim szeretnek viccelni a szünetben</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳁𐳀𐳢𐳁𐳦𐳀𐳐𐳘 𐳥𐳉𐳢𐳉𐳦𐳙𐳉𐳓 𐳮𐳐𐳖𐳖𐳉𐳖𐳙𐳐 𐳀 𐳥𐳬𐳙𐳉𐳦𐳁𐳉𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">lelucon</orth>
+		    <orth script="Jv">ꦊꦭꦸꦕꦺꦴꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#lelucon">
+          <orth script="Latin">lelucon</orth>
+          <orth script="Jv">ꦊꦭꦸꦕꦺꦴꦤ꧀</orth>
+        </ref>
+      </note>
+</entry>

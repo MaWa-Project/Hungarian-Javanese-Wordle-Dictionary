@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="meleg">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">meleg</orth>
+        <orth xml:lang="Hu" script="Runic">𐳘𐳉𐳖𐳉𐳍</orth>
+        <pron>
+          <syllabic>me·leg</syllabic>
+          <ipa>[\\text{mɛlɛɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-ebb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳉𐳁𐳁-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">homo</orth>
+          <orth script="Jv">ꦲꦺꦴꦩꦺꦴ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">homo</orth>
+          <orth script="Jv">ꦲꦺꦴꦩꦺꦴ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	wong sing seneng karo wong sak jenisé
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦮꦺꦴꦁꦱꦶꦁꦱꦼꦤꦼꦁꦏꦫꦺꦴꦮꦺꦴꦁꦱꦏ꧀ꦗꦼꦤꦶꦱꦺ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A barátom meleg</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳂𐳀𐳢𐳁𐳦𐳛𐳘 𐳘𐳉𐳖𐳉𐳍
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kancaku homo</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦚ꧀ꦕꦏꦸꦲꦺꦴꦩꦺꦴ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">homoszexuális</orth>
+            <orth script="Runic">𐳏𐳛𐳘𐳛𐳤𐳯𐳉𐳓‍𐳥𐳪𐳁𐳖𐳐𐳤</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-közösség</orth>
+            <orth script="Runic">𐳓𐳞𐳯𐳞𐳤𐳤𐳋𐳍-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#büszke">
+          <orth script="Latin">büszke</orth>
+          <orth script="Runic">𐳂𐳬𐳥𐳓𐳉</orth>
+        </ref>
+      </note>
+</entry>

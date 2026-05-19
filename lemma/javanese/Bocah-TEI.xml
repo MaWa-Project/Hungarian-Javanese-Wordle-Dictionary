@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="bocah">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">bocah</orth>
+        <orth xml:lang="Jv" script="Jv">ꦧꦺꦴꦕꦃ</orth>
+        <pron>
+          <syllabic>bo·cah</syllabic>
+          <ipa>[\text{bɔtʃah}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-bocah</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦧꦺꦴꦕꦃ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">gyerek</orth>
+          <orth script="Runic">𐳎𐳉𐳢𐳉𐳓</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">gyermek</orth>
+          <orth script="Runic">𐳎𐳉𐳢𐳘𐳉𐳓</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	fiatal korú személy, kisgyermek
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳌𐳐𐳀𐳦𐳀𐳖 𐳓𐳛𐳢𐳭 𐳥𐳉𐳘𐳋𐳗, 𐳓𐳐𐳤𐳎𐳉𐳢𐳘𐳉𐳓
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Bocah cilik iku dolanan bal ing latar</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦧꦺꦴꦕꦃꦕꦶꦭꦶꦏ꧀ꦲꦶꦏꦸꦢꦺꦴꦭꦤ꧀ꦤꦤ꧀ꦧꦭ꧀ꦲꦶꦁꦭꦠꦂ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A kisgyerek az udvaron játszik</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳐𐳤𐳎𐳉𐳢𐳉𐳓 𐳀𐳯 𐳪𐳇𐳮𐳀𐳢𐳛𐳙 𐳒𐳁𐳆𐳐𐳓
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">lare</orth>
+		    <orth script="Jv">ꦭꦉ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-cilik</orth>
+            <orth script="Jv">-ꦕꦶꦭꦶꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#lare">
+          <orth script="Latin">lare</orth>
+          <orth script="Jv">ꦭꦉ</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="pecut">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">pecut</orth>
+        <orth xml:lang="Jv" script="Jv">ꦥꦼꦕꦸꦠ꧀</orth>
+        <pron>
+          <syllabic>pe·cut</syllabic>
+          <ipa>[\text{pətʃʊt}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-pecut</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦥꦼꦕꦸꦠ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ostor</orth>
+          <orth script="Runic">𐳛𐳤𐳦𐳛𐳢</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">korbács</orth>
+          <orth script="Runic">𐳓𐳛𐳢𐳁𐳁𐳆</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	ütésre használt eszköz hosszú szíjjal
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳬𐳦𐳋𐳤𐳢𐳉 𐳏𐳀𐳤𐳙𐳁𐳖𐳦 𐳉𐳤𐳓𐳟𐳯 𐳏𐳛𐳤𐳥𐳫 𐳥𐳐𐳒𐳐𐳀𐳖
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Pecut iku digawe saka lulang utawa tali</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦥꦼꦕꦸꦠ꧀ꦲꦶꦏꦸꦢꦶꦒꦮꦺꦱꦏꦭꦸꦭꦁꦲꦸꦠꦮꦠꦭꦶ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Az ostorral hajtják a lovakat</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳛𐳤𐳦𐳛𐳢𐳢𐳀𐳖 𐳏𐳀𐳒𐳦𐳒𐳁𐳓 𐳀 𐳖𐳛𐳮𐳀𐳓𐳀𐳦
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">cambhuk</orth>
+		    <orth script="Jv">ꦕꦩ꧀ꦧꦸꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#cambhuk">
+          <orth script="Latin">cambhuk</orth>
+          <orth script="Jv">ꦕꦩ꧀ꦧꦸꦏ꧀</orth>
+        </ref>
+      </note>
+</entry>

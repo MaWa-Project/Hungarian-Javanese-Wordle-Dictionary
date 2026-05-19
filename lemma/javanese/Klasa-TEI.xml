@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="klasa">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">klasa</orth>
+        <orth xml:lang="Jv" script="Jv">ꦏ꧀ꦭꦱ</orth>
+        <pron>
+          <syllabic>kla·sa</syllabic>
+          <ipa>[\text{klɔsɔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-klasa</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦏ꧀ꦭꦱ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">gyékény</orth>
+          <orth script="Runic">𐳎𐳋𐳓𐳋𐳚</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">szőnyeg</orth>
+          <orth script="Runic">𐳥𐳟𐳚𐳉𐳍</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	padlóra tett növényi szőnyeg
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳠𐳀𐳇𐳖𐳜𐳢𐳀 𐳦𐳉𐳦𐳦 𐳙𐳝𐳮𐳋𐳚𐳐 𐳥𐳟𐳚𐳉𐳍
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Klasa anyar iki krasa adem banget</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏ꧀ꦭꦱꦲꦚꦂꦲꦶꦏꦶꦏꦿꦱꦲꦢꦼꦩ꧀ꦧꦔꦼꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Az új gyékényen ülök a szobában</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳫𐳒 𐳎𐳋𐳓𐳋𐳚𐳉𐳙 𐳬𐳖𐳝𐳓 𐳀 𐳥𐳛𐳁𐳀𐳁𐳀𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">gelaran</orth>
+		    <orth script="Jv">ꦒꦼꦭꦂꦫꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-pandhan</orth>
+            <orth script="Jv">-ꦥꦤ꧀ꦝꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#gelaran">
+          <orth script="Latin">gelaran</orth>
+          <orth script="Jv">ꦒꦼꦭꦂꦫꦤ꧀</orth>
+        </ref>
+      </note>
+</entry>

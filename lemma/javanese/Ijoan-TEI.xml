@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="ijoan">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">ijoan</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦶꦗꦺꦴꦲꦤ꧀</orth>
+        <pron>
+          <syllabic>i·jo·an</syllabic>
+          <ipa>[\text{idʒɔan}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">ijo-ijoan</orth>
+            <orth xml:lang="Jv" script="Jv">ꦲꦶꦗꦺꦴꦲꦶꦗꦺꦴꦲꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">zöld</orth>
+          <orth script="Runic">𐳯𐳟𐳖𐳇</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">zöldes</orth>
+          <orth script="Runic">𐳯𐳟𐳖𐳇𐳉𐳤</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	zöld színű, még nem érett
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳯𐳟𐳖𐳇 𐳥𐳐𐳚𐳭, 𐳘𐳋𐳍 𐳙𐳉𐳘 𐳋𐳢𐳉𐳦𐳦
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Batang krambil isih ijoan durung mateng</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦧꦠꦁꦏꦿꦩ꧀ꦧꦶꦭ꧀ꦲꦶꦱꦶꦃꦲꦶꦗꦺꦴꦲꦤ꧀ꦢꦸꦫꦸꦁꦩꦠꦼꦁ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A gyümölcs még zöld és éretlen</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳎𐳬𐳘𐳟𐳖𐳉𐳤 𐳘𐳋𐳍 𐳯𐳟𐳖𐳇 𐳋𐳤 𐳋𐳢𐳉𐳦𐳖𐳉𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ijem</orth>
+		    <orth script="Jv">ꦲꦶꦗꦼꦩ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ijo">
+          <orth script="Latin">ijo</orth>
+          <orth script="Jv">ꦲꦶꦗꦺꦴ</orth>
+        </ref>
+      </note>
+</entry>

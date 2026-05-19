@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="sabun">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">sabun</orth>
+        <orth xml:lang="Jv" script="Jv">ꦱꦧꦸꦤ꧀</orth>
+        <pron>
+          <syllabic>sa·bun</syllabic>
+          <ipa>[\text{sabʊn}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-sabun</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦱꦧꦸꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">szappan</orth>
+          <orth script="Runic">𐳥𐳀𐳠𐳠𐳀𐳙</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">szappan</orth>
+          <orth script="Runic">𐳥𐳀𐳠𐳠𐳀𐳙</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	tisztítószer a test mosásához
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳦𐳐𐳤𐳯𐳑𐳑𐳜𐳥𐳋𐳢 𐳀 𐳦𐳉𐳤𐳦 𐳘𐳛𐳤𐳁𐳤𐳁𐳏𐳛𐳯
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Sabuné wangi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦱꦧꦸꦤꦺꦮꦔꦶ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A szappan illatos</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳥𐳀𐳠𐳠𐳀𐳙 𐳐𐳖𐳖𐳀𐳦𐳛𐳤
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">sabun</orth>
+		    <orth script="Jv">ꦱꦧꦸꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#cuci">
+          <orth script="Latin">cuci</orth>
+          <orth script="Jv">ꦕꦸꦕꦶ</orth>
+        </ref>
+      </note>
+</entry>

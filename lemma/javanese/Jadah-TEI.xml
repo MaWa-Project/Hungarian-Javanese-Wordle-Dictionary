@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="jadah">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">jadah</orth>
+        <orth xml:lang="Jv" script="Jv">ꦗꦢꦃ</orth>
+        <pron>
+          <syllabic>ja·dah</syllabic>
+          <ipa>[\text{dʒadah}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-jadah</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦗꦢꦃ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ragasütemény</orth>
+          <orth script="Runic">𐳢𐳀𐳍𐳀𐳤𐳬𐳦𐳉𐳘𐳋𐳚</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">rizssütemény</orth>
+          <orth script="Runic">𐳢𐳐𐳯𐳤𐳤𐳬𐳦𐳉𐳘𐳋𐳚</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	ragasütemény ketánból, gyakran rendánggal
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳢𐳀𐳍𐳀𐳤𐳬𐳦𐳉𐳘𐳋𐳚 𐳓𐳉𐳦𐳁𐳙𐳁𐳛𐳖, 𐳎𐳀𐳖𐳢𐳀𐳙 𐳢𐳉𐳙𐳇𐳁𐳙𐳍𐳀𐳖
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Jadah iki dipangan karo rendang pedhes</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦗꦢꦃꦲꦶꦏꦶꦢꦶꦥꦔꦤ꧀ꦏꦫꦺꦴꦉꦤ꧀ꦢꦁꦥꦼꦝꦼꦱ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Ezt a ragát rendanggal eszik</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳉𐳯𐳦 𐳀 𐳢𐳀𐳍𐳁𐳦 𐳢𐳉𐳙𐳇𐳁𐳙𐳍𐳀𐳖 𐳉𐳤𐳐𐳓
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ketan tekan</orth>
+		    <orth script="Jv">ꦏꦼꦠꦤ꧀ꦠꦼꦏꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ketan">
+          <orth script="Latin">ketan</orth>
+          <orth script="Jv">ꦏꦼꦠꦤ꧀</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="weruh">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">weruh</orth>
+        <orth xml:lang="Jv" script="Jv">ꦮꦼꦫꦸꦃ</orth>
+        <pron>
+          <syllabic>we·ruh</syllabic>
+          <ipa>[\text{wərʊh}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">weruh-weruh</orth>
+            <orth xml:lang="Jv" script="Jv">ꦮꦼꦫꦸꦃꦮꦼꦫꦸꦃ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">lát</orth>
+          <orth script="Runic">𐳖𐳁𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">szemlél</orth>
+          <orth script="Runic">𐳥𐳉𐳘𐳖𐳋𐳖</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	látni, érzékelni a szemmel
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳖𐳁𐳦𐳙𐳐, 𐳋𐳢𐳯𐳋𐳓𐳉𐳖𐳙𐳐 𐳀 𐳥𐳉𐳘𐳘𐳉𐳖
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aku weruh kucing ing ndhuwur pager</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦮꦼꦫꦸꦃꦏꦸꦕꦶꦁꦲꦶꦁꦔ꧀ꦝꦸꦮꦸꦂꦥꦒꦼꦂ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Látok egy macskát a kerítésen</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳖𐳁𐳦𐳛𐳓 𐳉𐳎 𐳘𐳀𐳆𐳓𐳁𐳦 𐳀 𐳓𐳉𐳢𐳐𐳦𐳋𐳤𐳉𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ningali</orth>
+		    <orth script="Jv">ꦤꦶꦔꦭꦶ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ningali">
+          <orth script="Latin">ningali</orth>
+          <orth script="Jv">ꦤꦶꦔꦭꦶ</orth>
+        </ref>
+      </note>
+</entry>

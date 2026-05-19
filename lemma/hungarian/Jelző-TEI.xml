@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="jelző">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">jelző</orth>
+        <orth xml:lang="Hu" script="Runic">𐳒𐳉𐳖𐳯𐳟</orth>
+        <pron>
+          <syllabic>jel·ző</syllabic>
+          <ipa>[\\text{jɛlzøː}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-k</orth>
+            <orth xml:lang="Hu" script="Runic">𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">tenger</orth>
+          <orth script="Jv">ꦠꦼꦔꦼꦂ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">tandha</orth>
+          <orth script="Jv">ꦠꦤ꧀ꦝ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	barang utawa tandha sing dienggo kanggo ngandhani
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦫꦁꦲꦸꦠꦮꦠꦤ꧀ꦝꦱꦶꦁꦢꦶꦲꦼꦁꦒꦺꦴꦏꦁꦒꦺꦴꦔꦤ꧀ꦝꦤ꧀ꦤꦶ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A jelző piros</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳒𐳉𐳖𐳯𐳟 𐳠𐳐𐳢𐳛𐳤
+        </quote>
+        <quote xml:lang="Jv" script="Latin">tengeré abang</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦠꦼꦔꦼꦂꦫꦺꦲꦧꦁ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">jel</orth>
+            <orth script="Runic">𐳒𐳉𐳖</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-fény</orth>
+            <orth script="Runic">𐳌𐳋𐳚-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#jel">
+          <orth script="Latin">jel</orth>
+          <orth script="Runic">𐳒𐳉𐳖</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="krasa">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">krasa</orth>
+        <orth xml:lang="Jv" script="Jv">ꦏꦿꦱ</orth>
+        <pron>
+          <syllabic>kra·sa</syllabic>
+          <ipa>[\text{krasɔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">krasa-krasa</orth>
+            <orth xml:lang="Jv" script="Jv">ꦏꦿꦱꦏꦿꦱ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">érez</orth>
+          <orth script="Runic">𐳋𐳢𐳉𐳯</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">megérez</orth>
+          <orth script="Runic">𐳘𐳉𐳍𐳋𐳢𐳉𐳯</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	érzékeli vagy tapasztalja az érzést
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳋𐳢𐳯𐳋𐳓𐳉𐳖𐳐 𐳮𐳀𐳎 𐳦𐳀𐳠𐳀𐳤𐳦𐳀𐳖𐳒𐳀 𐳀𐳯 𐳋𐳢𐳯𐳋𐳤𐳦
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Krasa adhem banget awakku sawise udan</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦿꦱꦲꦢꦼꦩ꧀ꦧꦔꦼꦠ꧀ꦲꦮꦏ꧀ꦏꦸꦱꦮꦶꦱꦺꦲꦸꦢꦤ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Érzem a hideget az eső után</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳋𐳢𐳯𐳉𐳘 𐳀 𐳏𐳐𐳇𐳉𐳍𐳉𐳦 𐳀𐳯 𐳉𐳤𐳟 𐳪𐳦𐳁𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ngrasakake</orth>
+		    <orth script="Jv">ꦔꦿꦱꦏ꧀ꦏꦏꦺ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ake</orth>
+            <orth script="Jv">-ꦲꦏꦺ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#raos">
+          <orth script="Latin">raos</orth>
+          <orth script="Jv">ꦫꦲꦺꦴꦱ꧀</orth>
+        </ref>
+      </note>
+</entry>

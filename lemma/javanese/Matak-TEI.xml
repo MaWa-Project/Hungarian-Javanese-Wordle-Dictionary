@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="matak">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">matak</orth>
+        <orth xml:lang="Jv" script="Jv">ꦩꦠꦏ꧀</orth>
+        <pron>
+          <syllabic>ma·tak</syllabic>
+          <ipa>[\text{mataʔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">matak-matak</orth>
+            <orth xml:lang="Jv" script="Jv">ꦩꦠꦏ꧀ꦩꦠꦏ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">dob</orth>
+          <orth script="Runic">𐳇𐳛𐳁</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">hajít</orth>
+          <orth script="Runic">𐳏𐳀𐳒𐳑𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	eldob valamit a levegőn keresztül
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳉𐳖𐳇𐳛𐳁 𐳮𐳀𐳖𐳀𐳘𐳐𐳦 𐳀 𐳖𐳉𐳮𐳉𐳍𐳟𐳙 𐳓𐳋𐳢𐳉𐳤𐳦𐳬𐳖
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Wong lanang kuwi matak batu bata menyang omah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦺꦴꦁꦭꦤꦁꦏꦸꦮꦶꦩꦠꦏ꧀ꦧꦠꦸꦧꦠꦩꦼꦚꦁꦲꦺꦴꦩꦃ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A férfi téglát dob a ház felé</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳌𐳋𐳢𐳌𐳐 𐳦𐳋𐳍𐳖𐳁𐳦 𐳇𐳛𐳁 𐳀 𐳏𐳁𐳯 𐳌𐳉𐳖𐳋
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">nguncali</orth>
+		    <orth script="Jv">ꦔꦸꦚ꧀ꦕꦭꦶ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#nguncali">
+          <orth script="Latin">nguncali</orth>
+          <orth script="Jv">ꦔꦸꦚ꧀ꦕꦭꦶ</orth>
+        </ref>
+      </note>
+</entry>

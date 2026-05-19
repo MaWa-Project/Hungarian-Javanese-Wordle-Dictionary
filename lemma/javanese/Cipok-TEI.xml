@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="cipok">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">cipok</orth>
+        <orth xml:lang="Jv" script="Jv">ꦕꦶꦥꦺꦴꦏ꧀</orth>
+        <pron>
+          <syllabic>ci·pok</syllabic>
+          <ipa>[\text{tʃipɔʔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">cipok-cipok</orth>
+            <orth xml:lang="Jv" script="Jv">ꦕꦶꦥꦺꦴꦏ꧀ꦕꦶꦥꦺꦴꦏ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">csók</orth>
+          <orth script="Runic">𐳆𐳜𐳓</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">puszi</orth>
+          <orth script="Runic">𐳠𐳪𐳤𐳐</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	ajakkal érintés szerelemből vagy tiszteletből
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳀𐳒𐳀𐳖𐳖𐳀𐳖 𐳋𐳢𐳐𐳙𐳦𐳋𐳤 𐳥𐳉𐳢𐳉𐳖𐳘𐳁𐳖 𐳮𐳀𐳎 𐳦𐳐𐳤𐳦𐳉𐳖𐳉𐳦𐳁𐳖
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Wong lanang kuwi cipok pacar lanange neng publik</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦺꦴꦁꦭꦤꦁꦏꦸꦮꦶꦕꦶꦥꦺꦴꦏ꧀ꦥꦕꦂꦭꦤꦔꦺꦤꦼꦁꦥꦸꦧ꧀ꦭꦶꦏ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A fiú megcsókolja a barátját a nyilvánosság előtt</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳌𐳐𐳫 𐳘𐳉𐳍𐳆𐳜𐳓𐳛𐳖𐳒𐳀 𐳀 𐳁𐳀𐳢𐳁𐳦𐳒𐳁𐳦 𐳀 𐳙𐳐𐳖𐳮𐳁𐳙𐳛𐳤𐳁𐳍 𐳉𐳖𐳟𐳦𐳦
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ngambung</orth>
+		    <orth script="Jv">ꦔꦩ꧀ꦧꦸꦁ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ngambung">
+          <orth script="Latin">ngambung</orth>
+          <orth script="Jv">ꦔꦩ꧀ꦧꦸꦁ</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="görög">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">görög</orth>
+        <orth xml:lang="Hu" script="Runic">𐳍𐳞𐳢𐳞𐳍</orth>
+        <pron>
+          <syllabic>gö·rög</syllabic>
+          <ipa>[\\text{ɡørøɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-ebb</orth>
+ 			<orth xml:lang="Hu" script="Runic">𐳉𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">Yunani</orth>
+          <orth script="Jv">ꦪꦸꦤꦤꦶ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">Yunani</orth>
+          <orth script="Jv">ꦪꦸꦤꦤꦶ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	sing ana gegayutan karo Yunani utawa wong Yunani
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦱꦶꦁꦲꦤꦒꦼꦒꦪꦸꦠꦤ꧀ꦏꦫꦺꦴꦪꦸꦤꦤꦶꦲꦸꦠꦮꦮꦺꦴꦁꦪꦸꦤꦤꦶ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A görög nyelv nagyon régi</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳍𐳞𐳢𐳞𐳍 𐳚𐳉𐳖𐳮 𐳙𐳀𐳎𐳛𐳙 𐳢𐳋𐳍𐳐
+        </quote>
+        <quote xml:lang="Jv" script="Latin">basa Yunani kuwi lawas</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦧꦱꦪꦸꦤꦤꦶꦏꦸꦮꦶꦭꦮꦱ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">hellén</orth>
+			<orth script="Runic">𐳏𐳉𐳖𐳖𐳋𐳙</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-alfabet</orth>
+            <orth script="Runic">𐳀𐳖𐳌𐳀𐳂𐳉𐳦-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#Görögország">
+          <orth script="Latin">Görögország</orth>
+          <orth script="Runic">𐲍𐳞𐳢𐳞𐳍𐳛𐳢𐳥𐳁𐳍</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="adang">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">adang</orth>
+        <orth xml:lang="Jv" script="Jv">ꦲꦢꦁ</orth>
+        <pron>
+          <syllabic>a·dang</syllabic>
+          <ipa>[\text{adaŋ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">adang-adang</orth>
+            <orth xml:lang="Jv" script="Jv">ꦲꦢꦁꦲꦢꦁ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">rizst fõz</orth>
+          <orth script="Runic">𐳢𐳐𐳰𐳤𐳦 𐳌𐳟𐳯</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">készít</orth>
+          <orth script="Runic">𐳓𐳋𐳥𐳑𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	rizst párolva fõzni
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳢𐳐𐳰𐳤𐳦 𐳠𐳁𐳢𐳛𐳖𐳮𐳀 𐳌𐳟𐳯𐳙𐳐
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Ibu adang sega ing pawon saiki</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦶꦧꦸꦲꦢꦁꦱꦼꦒꦲꦶꦁꦥꦮꦺꦴꦤ꧀ꦱꦲꦶꦏꦶ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Az anya rizst fõz a konyhában</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳀𐳙𐳀 𐳢𐳐𐳰𐳤𐳦 𐳌𐳟𐳯 𐳀 𐳓𐳛𐳚𐳐𐳏𐳁𐳀𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">masak</orth>
+		    <orth script="Jv">ꦩꦱꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-sega</orth>
+            <orth script="Jv">-ꦱꦼꦒ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#masak">
+          <orth script="Latin">masak</orth>
+          <orth script="Jv">ꦩꦱꦏ꧀</orth>
+        </ref>
+      </note>
+</entry>

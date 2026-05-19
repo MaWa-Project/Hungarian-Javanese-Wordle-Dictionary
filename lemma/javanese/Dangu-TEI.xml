@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="dangu">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">dangu</orth>
+        <orth xml:lang="Jv" script="Jv">ꦢꦔꦸ</orth>
+        <pron>
+          <syllabic>da·ngu</syllabic>
+          <ipa>[\text{daŋu}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">dangu-dangu</orth>
+            <orth xml:lang="Jv" script="Jv">ꦢꦔꦸꦢꦔꦸ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">sokáig</orth>
+          <orth script="Runic">𐳤𐳛𐳓𐳁𐳐𐳍</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">régóta</orth>
+          <orth script="Runic">𐳢𐳋𐳍𐳜𐳦𐳀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	hosszú időtartamú, sokáig tartó
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳏𐳛𐳤𐳥𐳫 𐳐𐳇𐳟𐳦𐳀𐳢𐳦𐳀𐳘𐳫, 𐳤𐳛𐳓𐳁𐳐𐳍 𐳦𐳀𐳢𐳜
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Dangu ora weruh</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦢꦔꦸꦲꦺꦴꦫꦮꦼꦫꦸꦃ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Rég nem láttalak</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳢𐳋𐳍 𐳙𐳉𐳘 𐳖𐳁𐳦𐳦𐳀𐳖𐳀𐳓
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">suwe</orth>
+		    <orth script="Jv">ꦱꦸꦮꦺ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">sa- -e</orth>
+            <orth script="Jv">ꦱ- -ꦲꦺ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#suwe">
+          <orth script="Latin">suwe</orth>
+          <orth script="Jv">ꦱꦸꦮꦺ</orth>
+        </ref>
+      </note>
+</entry>

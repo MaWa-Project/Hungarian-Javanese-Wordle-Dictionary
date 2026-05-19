@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="ébred">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">ébred</orth>
+        <orth xml:lang="Hu" script="Runic">𐳋𐳂𐳢𐳉𐳇</orth>
+        <pron>
+          <syllabic>éb·red</syllabic>
+          <ipa>[\\text{eːbrɛd}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="imperative">
+            <orth xml:lang="Hu" script="Latin">-j</orth>
+            <orth xml:lang="Hu" script="Runic">𐳒-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">tangi</orth>
+          <orth script="Jv">ꦠꦔꦶ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">wungu</orth>
+          <orth script="Jv">ꦮꦸꦔꦸ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	saka turu dadi melek
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦱꦏꦠꦸꦫꦸꦢꦢꦶꦩꦼꦊꦏ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A macska ébred</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳘𐳀𐳄𐳤𐳓𐳀 𐳋𐳂𐳢𐳉𐳇
+        </quote>
+        <quote xml:lang="Jv" script="Latin">kucing tangi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦸꦕꦶꦁꦠꦔꦶ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">felébred</orth>
+            <orth script="Runic">𐳌𐳉𐳖𐳋𐳂𐳢𐳉𐳇</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-és</orth>
+            <orth script="Runic">𐳋𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ébren">
+          <orth script="Latin">ébren</orth>
+          <orth script="Runic">𐳋𐳂𐳢𐳉𐳙</orth>
+        </ref>
+      </note>
+</entry>

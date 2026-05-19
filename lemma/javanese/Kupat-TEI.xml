@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="kupat">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">kupat</orth>
+        <orth xml:lang="Jv" script="Jv">ꦏꦸꦥꦠ꧀</orth>
+        <pron>
+          <syllabic>ku·pat</syllabic>
+          <ipa>[\text{kupat}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-kupat</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦏꦸꦥꦠ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">ketupat</orth>
+          <orth script="Runic">𐳓𐳉𐳦𐳪𐳠𐳀𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">rizsgombóc</orth>
+          <orth script="Runic">𐳢𐳐𐳯𐳤𐳍𐳛𐳘𐳜𐳖</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	pálmalevélbe csomagolt rizs
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳠𐳁𐳖𐳘𐳀𐳖𐳮𐳋𐳖𐳁𐳉 𐳆𐳛𐳘𐳀𐳍𐳛𐳖𐳦 𐳢𐳐𐳯𐳤
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Kupat iku panganan khas nalika Hari Raya</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦏꦸꦥꦠ꧀ꦲꦶꦏꦸꦥꦔꦤ꧀ꦤꦤ꧀ꦏ꦳ꦱ꧀ꦤꦭꦶꦏꦲꦫꦶꦫꦪ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A ketupatot ünnepi ételként fogyasztják</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳉𐳦𐳪𐳠𐳀𐳦𐳛𐳦 𐳬𐳙𐳙𐳉𐳠𐳐 𐳋𐳦𐳉𐳖𐳓𐳋𐳙𐳦 𐳌𐳛𐳎𐳀𐳤𐳦𐳒𐳁𐳓
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ketupat</orth>
+		    <orth script="Jv">ꦏꦼꦠꦸꦥꦠ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-lebaran</orth>
+            <orth script="Jv">-ꦊꦧꦫꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ketupat">
+          <orth script="Latin">ketupat</orth>
+          <orth script="Jv">ꦏꦼꦠꦸꦥꦠ꧀</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="ország">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">ország</orth>
+        <orth xml:lang="Hu" script="Runic">𐳛𐳢𐳤𐳯𐳁𐳍</orth>
+        <pron>
+          <syllabic>or·szág</syllabic>
+          <ipa>[\\text{orsaːɡ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Hu" script="Latin">-ok</orth>
+            <orth xml:lang="Hu" script="Runic">𐳛𐳓-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">negara</orth>
+          <orth script="Jv">ꦤꦼꦒꦫ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">nagari</orth>
+          <orth script="Jv">ꦤꦒꦫꦶ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	tlatah gedhé sing dadi panggonan sawijining bangsa
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦠ꧀ꦭꦠꦃꦒꦼꦝꦺꦱꦶꦁꦢꦢꦶꦥꦁꦒꦺꦴꦤ꧀ꦤꦤ꧀ꦱꦮꦶꦗꦶꦤꦶꦁꦧꦁꦱ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Az ország szép és nagy</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳯 𐳛𐳢𐳤𐳯𐳁𐳍 𐳤𐳯𐳋𐳠 𐳋𐳤 𐳙𐳀𐳎
+        </quote>
+        <quote xml:lang="Jv" script="Latin">negara kuwi éndah lan gedhé</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦤꦼꦒꦫꦏꦸꦮꦶꦲꦺꦤ꧀ꦣꦃꦭꦤ꧀ꦒꦼꦝꦺ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">állam</orth>
+            <orth script="Runic">𐳁𐳖𐳖𐳀𐳘</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-határ</orth>
+            <orth script="Runic">𐳏𐳀𐳦𐳁𐳢-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#országrész">
+          <orth script="Latin">országrész</orth>
+          <orth script="Runic">𐳛𐳢𐳤𐳯𐳁𐳍𐳢𐳋𐳤𐳯</orth>
+        </ref>
+      </note>
+</entry>

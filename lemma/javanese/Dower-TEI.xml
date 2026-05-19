@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="dower">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">dower</orth>
+        <orth xml:lang="Jv" script="Jv">ꦢꦺꦴꦮꦼꦂ</orth>
+        <pron>
+          <syllabic>do·wer</syllabic>
+          <ipa>[\text{doːwər}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">dower-dower</orth>
+            <orth xml:lang="Jv" script="Jv">ꦢꦺꦴꦮꦼꦂꦢꦺꦴꦮꦼꦂ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">duzzogó</orth>
+          <orth script="Runic">𐳇𐳪𐳯𐳯𐳛𐳍𐳜</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">mogorva</orth>
+          <orth script="Runic">𐳘𐳛𐳍𐳛𐳢𐳮𐳀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	rossz kedvű, sértődött személy
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳢𐳛𐳤𐳥 𐳓𐳉𐳇𐳮𐳭, 𐳤𐳋𐳢𐳦𐳟𐳇𐳟𐳦𐳦 𐳥𐳉𐳘𐳋𐳗
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aja dower wae mengko ora diparingi</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦗꦢꦺꦴꦮꦼꦂꦮꦲꦺꦩꦼꦁꦏꦺꦴꦲꦺꦴꦫꦢꦶꦥꦫꦶꦔꦶ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Mért vagy olyan mogorva ma reggel</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳘𐳋𐳢𐳦 𐳮𐳀𐳎𐳛𐳙 𐳘𐳛𐳍𐳛𐳢𐳮𐳀 𐳘𐳀 𐳢𐳉𐳍𐳉𐳖
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">ngambek</orth>
+		    <orth script="Jv">ꦔꦩ꧀ꦧꦼꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ngambek">
+          <orth script="Latin">ngambek</orth>
+          <orth script="Jv">ꦔꦩ꧀ꦧꦼꦏ꧀</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="nevel">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">nevel</orth>
+        <orth xml:lang="Hu" script="Runic">𐳙𐳉𐳮𐳉𐳖</orth>
+        <pron>
+          <syllabic>ne·vel</syllabic>
+          <ipa>[\\text{nɛvɛl}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="imperative">
+            <orth xml:lang="Hu" script="Latin">-j</orth>
+            <orth xml:lang="Hu" script="Runic">𐳒-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">ndidik</orth>
+          <orth script="Jv">ꦤ꧀ꦢꦶꦢꦶꦏ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">ndidik</orth>
+          <orth script="Jv">ꦤ꧀ꦢꦶꦢꦶꦏ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	ngajari lan ngopeni bocah supaya dadi wong apik
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦔꦗꦂꦫꦶꦭꦤ꧀ꦔꦺꦴꦥꦺꦤ꧀ꦤꦶꦧꦺꦴꦕꦃꦱꦸꦥꦪꦢꦢꦶꦮꦺꦴꦁꦲꦥꦶꦏ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A szülő neveli a gyermeket</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳥𐳬𐳖𐳟 𐳙𐳉𐳮𐳉𐳖𐳐 𐳀 𐳎𐳉𐳢𐳘𐳉𐳓𐳉𐳦
+        </quote>
+        <quote xml:lang="Jv" script="Latin">wong tuwa ndidik anaké</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦮꦺꦴꦁꦠꦸꦮꦤ꧀ꦢꦶꦢꦶꦏ꧀ꦲꦤꦏꦺ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">oktat</orth>
+            <orth script="Runic">𐳛𐳓𐳦𐳀𐳦</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-és</orth>
+            <orth script="Runic">𐳋𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#nevelés">
+          <orth script="Latin">nevelés</orth>
+          <orth script="Runic">𐳙𐳉𐳮𐳉𐳖𐳋𐳤</orth>
+        </ref>
+      </note>
+</entry>

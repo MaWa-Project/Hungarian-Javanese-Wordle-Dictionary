@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="kedvű">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">kedvű</orth>
+        <orth xml:lang="Hu" script="Runic">𐳓𐳉𐳇𐳮𐳭</orth>
+        <pron>
+          <syllabic>ked·vű</syllabic>
+          <ipa>[\\text{kɛdvyː}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-bb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kahanan ati</orth>
+          <orth script="Jv">ꦏꦲꦤ꧀ꦤꦤ꧀ꦲꦠꦶ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">kawontenan manah</orth>
+          <orth script="Jv">ꦏꦮꦺꦴꦤ꧀ꦠꦼꦤ꧀ꦤꦤ꧀ꦩꦤꦃ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	bab perasaan utawa kahananing ati
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦧꦧ꧀ꦥꦼꦫꦱꦲꦤ꧀ꦲꦸꦠꦮꦏꦲꦤ꧀ꦤꦤꦶꦁꦲꦠꦶ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">Jó kedvű vagyok</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳒𐳜 𐳓𐳉𐳇𐳮𐳭 𐳮𐳀𐳎𐳛𐳓
+        </quote>
+        <quote xml:lang="Jv" script="Latin">aku seneng atiné</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦱꦼꦤꦼꦁꦲꦠꦶꦤꦺ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">hangulatú</orth>
+            <orth script="Runic">𐳏𐳀𐳙𐳍𐳪𐳖𐳀𐳦𐳫</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-kedv</orth>
+            <orth script="Runic">𐳓𐳉𐳇𐳮-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#kedv">
+          <orth script="Latin">kedv</orth>
+          <orth script="Runic">𐳓𐳉𐳇𐳮</orth>
+        </ref>
+      </note>
+</entry>

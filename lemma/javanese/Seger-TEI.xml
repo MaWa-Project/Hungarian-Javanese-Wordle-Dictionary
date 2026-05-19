@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="seger">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">seger</orth>
+        <orth xml:lang="Jv" script="Jv">ꦱꦼꦒꦼꦂ</orth>
+        <pron>
+          <syllabic>se·ger</syllabic>
+          <ipa>[\text{səɡər}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="reduplication">
+            <orth xml:lang="Jv" script="Latin">seger-seger</orth>
+            <orth xml:lang="Jv" script="Jv">ꦱꦼꦒꦼꦂꦱꦼꦒꦼꦂ</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">friss</orth>
+          <orth script="Runic">𐳌𐳢𐳐𐳤𐳤</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">üdítő</orth>
+          <orth script="Runic">𐳬𐳇𐳐𐳦𐳟</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	erőt adó, frissítő érzés
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳉𐳢𐳟𐳦 𐳀𐳇𐳜, 𐳌𐳢𐳐𐳤𐳤𐳐𐳦𐳟 𐳋𐳢𐳯𐳋𐳤
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Seger rasane sawise adus banyu anget</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦱꦼꦒꦼꦂꦫꦱꦤꦺꦱꦮꦶꦱꦺꦲꦢꦸꦱ꧀ꦧꦚꦸꦲꦔꦼꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Friss érzés a meleg víz után</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐳌𐳢𐳐𐳤𐳤 𐳋𐳢𐳯𐳋𐳤 𐳀 𐳘𐳉𐳖𐳉𐳍 𐳮𐳑𐳯 𐳪𐳦𐳁𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">waras</orth>
+		    <orth script="Jv">ꦮꦫꦱ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#waras">
+          <orth script="Latin">waras</orth>
+          <orth script="Jv">ꦮꦫꦱ꧀</orth>
+        </ref>
+      </note>
+</entry>

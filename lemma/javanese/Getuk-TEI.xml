@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="getuk">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">getuk</orth>
+        <orth xml:lang="Jv" script="Jv">ꦒꦼꦛꦸꦏ꧀</orth>
+        <pron>
+          <syllabic>ge·tuk</syllabic>
+          <ipa>[\text{ɡət̪ʊʔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-getuk</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦒꦼꦛꦸꦏ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">getuk</orth>
+          <orth script="Runic">𐳍𐳉𐳦𐳪𐳓</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">maniókasütemény</orth>
+          <orth script="Runic">𐳘𐳀𐳙𐳐𐳜𐳓𐳀𐳤𐳬𐳦𐳉𐳘𐳋𐳚</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	kaszáva főzésével készült édesség
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳓𐳀𐳤𐳁𐳮𐳀 𐳌𐳟𐳯𐳋𐳤𐳉𐳮𐳀𐳖 𐳓𐳉𐳥𐳬𐳖𐳦 𐳋𐳇𐳉𐳤𐳋𐳍
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Getuk iku panganan tradisional sing enak banget</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦒꦼꦛꦸꦏ꧀ꦲꦶꦏꦸꦥꦔꦤ꧀ꦤꦤ꧀ꦠꦿꦢꦶꦱꦶꦪꦺꦴꦤꦭ꧀ꦱꦶꦁꦲꦺꦤꦏ꧀ꦧꦔꦼꦠ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A getuk hagyományos édes kása</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳍𐳉𐳦𐳪𐳓 𐳏𐳀𐳎𐳛𐳘𐳀𐳚𐳛𐳤 𐳋𐳇𐳉𐳤 𐳓𐳁𐳤𐳀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">gethuk</orth>
+		    <orth script="Jv">ꦒꦼꦛꦸꦏ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#gethuk">
+          <orth script="Latin">gethuk</orth>
+          <orth script="Jv">ꦒꦼꦛꦸꦏ꧀</orth>
+        </ref>
+      </note>
+</entry>

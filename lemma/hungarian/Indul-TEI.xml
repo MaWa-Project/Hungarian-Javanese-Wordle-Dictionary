@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="indul">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">indul</orth>
+        <orth xml:lang="Hu" script="Runic">𐲐𐳙𐳇𐳪𐳖</orth>
+        <pron>
+          <syllabic>in·dul</syllabic>
+          <ipa>[\\text{indul}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>verb</pos>
+          <inflection type="imperative">
+            <orth xml:lang="Hu" script="Latin">-j</orth>
+            <orth xml:lang="Hu" script="Runic">𐳒-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">mangkat</orth>
+          <orth script="Jv">ꦩꦁꦏꦠ꧀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">bidhal</orth>
+          <orth script="Jv">ꦧꦶꦝꦭ꧀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	miwiti lelungan utawa obah saka panggonan
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦩꦶꦮꦶꦠꦶꦊꦭꦸꦔꦤ꧀ꦲꦸꦠꦮꦲꦺꦴꦧꦃꦱꦏꦥꦁꦒꦺꦴꦤ꧀ꦤꦤ꧀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A vonat indul reggel</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳮𐳛𐳙𐳀𐳦 𐳐𐳙𐳇𐳪𐳖 𐳢𐳉𐳍𐳍𐳉𐳖
+        </quote>
+        <quote xml:lang="Jv" script="Latin">sepur mangkat ésuk</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦱꦼꦥꦸꦂꦩꦁꦏꦠ꧀ꦲꦺꦱꦸꦏ꧀
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">elkezd</orth>
+            <orth script="Runic">𐳉𐳖𐳓𐳉𐳯𐳇</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-ás</orth>
+            <orth script="Runic">𐳁𐳤-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#út">
+          <orth script="Latin">út</orth>
+          <orth script="Runic">𐳫𐳦</orth>
+        </ref>
+      </note>
+</entry>

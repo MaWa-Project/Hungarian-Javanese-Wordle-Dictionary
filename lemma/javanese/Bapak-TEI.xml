@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="bapak">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">bapak</orth>
+        <orth xml:lang="Jv" script="Jv">ꦧꦥꦏ꧀</orth>
+        <pron>
+          <syllabic>ba·pak</syllabic>
+          <ipa>[\text{bapaʔ}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-bapak</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦧꦥꦏ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">apa</orth>
+          <orth script="Runic">𐳀𐳠𐳀</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">atya</orth>
+          <orth script="Runic">𐳀𐳨𐳀</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	férfi szülő, aki a gyermek apja
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳌𐳋𐳢𐳌𐳐 𐳥𐳭𐳖𐳟, 𐳀𐳓𐳐 𐳀 𐳎𐳉𐳢𐳘𐳉𐳓 𐳀𐳠𐳒𐳀
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Bapak maca koran</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦧꦥꦏ꧀ꦩꦕꦏꦺꦴꦫꦤ꧀
+        </quote>
+        <quote xml:lang="Hu" script="Latin">Apa itt van</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀𐳠𐳀 𐳐𐳑𐳑 𐳮𐳀𐳙
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">bapa</orth>
+		    <orth script="Jv">ꦧꦥ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-né</orth>
+            <orth script="Jv">-ꦤꦺ</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#ibu">
+          <orth script="Latin">ibu</orth>
+          <orth script="Jv">ꦲꦶꦧꦸ</orth>
+        </ref>
+      </note>
+</entry>

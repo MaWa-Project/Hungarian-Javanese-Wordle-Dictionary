@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="kebon">
+	<form type="lemma">
+    	<orth xml:lang="Jv" script="Latin">kebon</orth>
+        <orth xml:lang="Jv" script="Jv">ꦏꦼꦧꦺꦴꦤ꧀</orth>
+        <pron>
+          <syllabic>ke·bon</syllabic>
+          <ipa>[\text{kəbɔn}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>substantive</pos>
+          <inflection type="plural">
+            <orth xml:lang="Jv" script="Latin">-kebon</orth>
+            <orth xml:lang="Jv" script="Jv">-ꦏꦼꦧꦺꦴꦤ꧀</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="közb">
+        <usg type="register" xml:lang="Hu">közb.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">kert</orth>
+          <orth script="Runic">𐳓𐳉𐳢𐳦</orth>
+        </cit>
+      </sense>
+      <sense xml:id="irod">
+        <usg type="register" xml:lang="Hu">irod.</usg>
+        <cit type="translation" xml:lang="Hu">
+          <orth script="Latin">liget</orth>
+          <orth script="Runic">𐳖𐳐𐳍𐳉𐳦</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Hu" script="Latin">
+          	növények termesztésére szolgáló terület
+          </seg>
+          <seg xml:lang="Hu" script="Runic">
+          	𐳙𐳟𐳮𐳋𐳚𐳋𐳓 𐳦𐳉𐳢𐳘𐳉𐳤𐳦𐳋𐳤𐳋𐳢𐳉 𐳥𐳛𐳖𐳍𐳁𐳖𐳜 𐳦𐳉𐳢𐳬𐳖𐳉𐳦
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Jv" script="Latin">Aku tanduran sayur ing kebon omah</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦲꦏꦸꦠꦤ꧀ꦢꦸꦂꦫꦤ꧀ꦱꦪꦸꦂꦲꦶꦁꦏꦼꦧꦺꦴꦤ꧀ꦲꦺꦴꦩꦃ
+        </quote>
+        <quote xml:lang="Hu" script="Latin">A kertben sok zöldséget termesztek</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳓𐳉𐳢𐳦𐳁𐳉𐳙 𐳤𐳛𐳓 𐳯𐳟𐳖𐳇𐳤𐳋𐳍𐳉𐳦 𐳦𐳉𐳢𐳘𐳉𐳤𐳦𐳉𐳓
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">tegal</orth>
+		    <orth script="Jv">ꦠꦼꦒꦭ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-an</orth>
+            <orth script="Jv">-ꦲꦤ꧀</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#tegal">
+          <orth script="Latin">tegal</orth>
+          <orth script="Jv">ꦠꦼꦒꦭ꧀</orth>
+        </ref>
+      </note>
+</entry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xml:id="magyar">
+	<form type="lemma">
+    	<orth xml:lang="Hu" script="Latin">magyar</orth>
+        <orth xml:lang="Hu" script="Runic">𐳘𐳀𐳎𐳀𐳢</orth>
+        <pron>
+          <syllabic>ma·gyar</syllabic>
+          <ipa>[\\text{mɒɟɒr}]</ipa>
+        </pron>
+        <gramGrp>
+          <pos>adjective</pos>
+          <inflection type="comparison">
+            <orth xml:lang="Hu" script="Latin">-abb</orth>
+            <orth xml:lang="Hu" script="Runic">𐳀𐳂𐳂-</orth>
+          </inflection>
+        </gramGrp>
+      </form>
+      <sense xml:id="ngoko">
+        <usg type="register" xml:lang="Jv">Ngoko</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">Hongaria</orth>
+          <orth script="Jv">ꦲꦺꦴꦔꦫꦶꦪ</orth>
+        </cit>
+      </sense>
+      <sense xml:id="krama">
+        <usg type="register" xml:lang="Jv">Krama</usg>
+        <cit type="translation" xml:lang="Jv">
+          <orth script="Latin">Hongaria</orth>
+          <orth script="Jv">ꦲꦺꦴꦔꦫꦶꦪ</orth>
+        </cit>
+      </sense>
+      <def>
+        <p>
+          <seg xml:lang="Jv" script="Latin">
+          	sing gegayutan karo Hongaria utawa wong Hongaria
+          </seg>
+          <seg xml:lang="Jv" script="Jv">
+            ꦱꦶꦁꦒꦼꦒꦪꦸꦠꦤ꧀ꦏꦫꦺꦴꦲꦺꦴꦔꦫꦶꦪꦲꦸꦠꦮꦮꦺꦴꦁꦲꦺꦴꦔꦫꦶꦪ
+          </seg>
+        </p>
+      </def>
+      <cit type="example">
+        <quote xml:lang="Hu" script="Latin">A magyar tudós nagyon híres</quote>
+        <quote xml:lang="Hu" script="Runic">
+          𐲀 𐳘𐳀𐳎𐳀𐳢 𐳦𐳪𐳇𐳜𐳤 𐳙𐳀𐳎𐳛𐳙 𐳏𐳑𐳢𐳉𐳤
+        </quote>
+        <quote xml:lang="Jv" script="Latin">ilmuwan Magyar kuwi kondhang</quote>
+        <quote xml:lang="Jv" script="Jv">
+          ꦆꦭ꧀ꦩꦸꦮꦤ꧀ꦲꦺꦴꦔꦫꦶꦪꦏꦸꦮꦶꦏꦺꦴꦤ꧀ꦝꦁ
+        </quote>
+      </cit>
+      <note type="synonyms">
+        <list>
+          <item>
+            <orth script="Latin">magyarországi</orth>
+            <orth script="Runic">𐳘𐳀𐳎𐳀𐳢𐳛𐳢𐳥𐳁𐳍𐳐</orth>
+          </item>
+        </list>
+      </note>
+      <note type="compounds">
+        <list>
+          <item>
+            <orth script="Latin">-nyelv</orth>
+            <orth script="Runic">𐳚𐳉𐳖𐳮-</orth>
+          </item>
+        </list>
+      </note>
+      <note type="crossReference">
+        <ref target="#Magyarország">
+          <orth script="Latin">Magyarország</orth>
+          <orth script="Runic">𐲘𐳀𐳎𐳀𐳢𐳛𐳢𐳥𐳁𐳍</orth>
+        </ref>
+      </note>
+</entry>
