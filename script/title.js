@@ -14,8 +14,8 @@ function wordle_title_maker() {
 
 // generates the title for the Wordle game with random colors for each letter and inserts it into the page
 document.addEventListener("DOMContentLoaded", () => {
-    const titleElement = document.getElementById('wordle-title');
-    if (titleElement) {
-        titleElement.innerHTML = wordle_title_maker();
-    }
+    const titleElements = document.querySelectorAll('#wordle-title');
+    titleElements.forEach((title) => {
+        title.innerHTML = wordle_title_maker();
+    })
 });
