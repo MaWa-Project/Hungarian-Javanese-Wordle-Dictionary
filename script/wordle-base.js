@@ -21,6 +21,7 @@ export class WordleEngine {
         this.activeRow = 0;             // tracks which guess row is currently active for input
         this.isSolverMode = false;      // solver mode has different key handling and doesn't end the game on correct guess
         this.onBoxClick = null;         // click callback for solver interactions
+        this.isFirstRender = true;      // make sure the appear animation only runs on first render
     }
 
     // default tokenization splits the word into characters (no digraphs/trigraphs)
@@ -65,7 +66,9 @@ export class WordleEngine {
         this.gameOver = false;
 
         this.drawBoard();
+        this.playCascadeAnimation();
         this.updatePossibleWords();
+        this.isFirstRender = true;
     }
 
     // appends a character to the current guess if it doesn't exceed the word length
@@ -93,8 +96,10 @@ export class WordleEngine {
                 this.guessesTokens[this.activeRow] = [...this.currentGuessTokens];
                 this.guessesColors[this.activeRow] = this.getRowColors(this.currentGuessTokens, this.targetWordTokens);
 
-                if ((guessNorm === targetNorm) || (this.activeRow === this.maxGuesses - 1)) {
+                const isWin = guessNorm === targetNorm;
+                if (isWin || (this.activeRow === this.maxGuesses - 1)) {
                     this.gameOver = true;
+                    setTimeout(() => this.showGameOverScreen(isWin), 600);
                 }
                 
                 this.activeRow++;
@@ -181,32 +186,58 @@ export class WordleEngine {
         return colors;
     }
 
+    // animates the board when created or reset
+    playCascadeAnimation() {
+        const board = document.getElementById('game-board');
+        if (!board) return;
+        
+        for (let i = 0; i < board.children.length; i++) {
+            board.children[i].classList.remove('animate-row');
+        }
+        
+        void board.offsetWidth; 
+        
+        for (let i = 0; i < board.children.length; i++) {
+            board.children[i].classList.add('animate-row');
+        }
+    }
+
     // initializes the board with empty tokens and default colors
     drawBoard() {
         const board = document.getElementById('game-board');
         if (!board) return;
-        board.innerHTML = '';
+
+        if (board.children.length === 0) {
+            for (let i = 0; i < this.maxGuesses; i++) {
+                const row = document.createElement('div');
+                row.className = "game-row";
+                for (let j = 0; j < this.wordLength; j++) {
+                    const box = document.createElement('span');
+                    row.appendChild(box);
+                }
+                board.appendChild(row);
+            }
+        }
 
         for (let i = 0; i < this.maxGuesses; i++) {
-            const row = document.createElement('div');
-            row.className = "game-row";
-
+            const row = board.children[i];
+            
             for (let j = 0; j < this.wordLength; j++) {
-                const box = document.createElement('span');
+                const box = row.children[j];
+                
                 box.className = "game-box";
+                box.onclick = null;
+                box.style.cursor = "default";
 
-                // from current guess if it's the active row
-                // otherwise from the stored guesses
                 let token = "";
-                if (i === this.activeRow) {
-                    token = this.currentGuessTokens[j] || "";
+                if (i === this.activeRow && j < this.currentGuessTokens.length) {
+                    token = this.currentGuessTokens[j];
                 } else {
-                    token = this.guessesTokens[i][j] || "";
+                    token = this.guessesTokens[i][j];
                 }
 
                 box.textContent = token;
 
-                // assign colors based on the guess
                 if (token) {
                     const stateColor = this.guessesColors[i][j];
                     if (!this.isSolverMode && stateColor === "initial") {
@@ -216,16 +247,12 @@ export class WordleEngine {
                         box.classList.add(stateColor === "initial" ? "gray" : stateColor);
                     }
                 }
-                
-                // in solver mode, allow clicking on boxes to change their color
+
                 if (this.isSolverMode && this.onBoxClick && token && i <= this.activeRow) {
                     box.onclick = () => this.onBoxClick(i, j);
                     box.style.cursor = "pointer";
                 }
-
-                row.appendChild(box);
             }
-            board.appendChild(row);
         }
     }
 
@@ -303,6 +330,46 @@ export class WordleEngine {
             });
             keyboard.appendChild(row);
         });
+    }
+
+    // creates the Victory / Game Over popup screen
+    showGameOverScreen(isWin) {
+        // creates the innerHTML if it doesn't already exist
+        let modal = document.getElementById('wordle-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'wordle-modal';
+            document.body.appendChild(modal);
+        }
+
+        const wordLink = `entry.html?word=${encodeURIComponent(this.targetWordLiteral)}&lang=${this.langFolder}`;
+        
+        const title = isWin ? "Victory! 🎉" : "Game Over! 😨";
+        const message = isWin
+            ? `Brilliant! You found the word in <strong>${this.activeRow}</strong> tries.`
+            : `Better luck next time!`;
+
+        // HTML injection
+        modal.innerHTML = `
+            <div class="modal-content">
+                <h1>${title}</h1>
+                <p>${message}</p>
+                <p>The word was:</p>
+                <p class="word-link">${this.targetWordLiteral.toUpperCase()}</p>
+                <div class="buttons">
+                    <button id="modal-reset-btn" class="reset-btn">Play Again</button>
+                    <button onclick="window.location.href='${wordLink}'">View Meaning</button>
+                </div>
+            </div>
+        `;
+
+        // makes the screen visible
+        modal.classList.add('show');
+
+        document.getElementById('modal-reset-btn').onclick = () => {
+            modal.classList.remove('show');
+            this.resetGame();
+        };
     }
 
     // adds informational text about the game and language specifics to the page

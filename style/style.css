@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Hungarian&display=swap');
+@keyframes smoothAppear {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes fadeSlideDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-15px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
 
+/* COLORS */
 :root {
     --bg-color: #f4f7f6;
     --card-bg: #ffffff;
@@ -8,6 +29,7 @@
     --text-main: #333;
 }
 
+/* BASIC SETTINGS */
 body {
     font-family: 'Segoe UI', 'Noto Sans Old Hungarian', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -15,23 +37,19 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
 }
-
 h1 { color: var(--hu-color); margin: 0 0 20px 0; }
 h2 { color: var(--hu-color); margin: 0 0 0 0; }
-
 header {
     border-bottom: 5px solid var(--bg-color);
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: center;
 }
-
 footer {
     border-top: 5px solid var(--bg-color);
     margin-top: 20px;
     padding-top: 10px;
 }
-
 summary {
     border-bottom: 5px solid var(--bg-color);
     margin-bottom: 20px;
@@ -39,9 +57,9 @@ summary {
     color: var(--hu-color);
     font-size: 1.1em;
     cursor: pointer;
-
 }
 
+/* COLUMNS */
 .columns { 
     display: flex;
     justify-content: center;
@@ -50,6 +68,13 @@ summary {
 .column-left { flex: 1; max-width: 800px; }
 .column-right { flex: 1; max-width: 700px; }
 
+/* BUTTONS + BUTTON HOLDER */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
 button {
     background: var(--card-bg);
     border: 2px solid var(--hu-color);
@@ -58,6 +83,23 @@ button {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 8px;
+    transition: all 0.2s ease, transform 0.1s ease;
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.modal-content button:hover,
+.main-content button:hover {
+    background: var(--hu-color);
+    color: white;
+    transition: all 0.2s ease-out;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+button.reset-btn:hover {
+    background: rgb(224, 39, 39);
+    border-color: rgb(224, 39, 39);
 }
 button.reset-btn {
     background: rgb(158, 17, 17);
@@ -65,39 +107,32 @@ button.reset-btn {
     color: white;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background: var(--hu-color);
-    color: white;
-    transition: all 0.2s ease-out;
-}
-button.reset-btn:hover {
-    background: rgb(224, 39, 39);
-    border-color: rgb(224, 39, 39);
-}
-
+/* CONTENT DIVS */
 .main-content {
     display: flex;
     justify-content: center;
     padding: 40px;
+    margin-top: 30px;
 }
-
 .content-card {
     background: var(--card-bg);
     width: 100%;
     max-width: 800px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 0, 0, 0.02);
     border-left: 8px solid var(--hu-color);
 }
 
+/* WORDLE COLORS + "HOW TO USE" BOX */
+.white-text { color: white; }
+.white { background: #ffffff; }
+.black { background: #121213; }
+.gray { background: #3a3a3c; }
+.green { background: #538d4e; }
+.yellow { background: #b59f3b; }
+.dark-green { background: #16640f; }
+.dark-yellow { background: #927a0e; }
 .square-ref {
     display: inline-block;
     width: 14px;
@@ -105,19 +140,29 @@ button.reset-btn:hover {
     margin-left: 10px;
     border: 1px solid var(--hu-color);
 }
-.wordle {
-    font-family: 'Times New Roman', Times, serif;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 0 2px;
-    border-radius: 4px;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+
+/* WORDLE GRID + ANIMATION */
+#game-board {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 340px;
+}
+.game-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.game-row:nth-child(1) { animation-delay: 0.05s; }
+.game-row:nth-child(2) { animation-delay: 0.10s; }
+.game-row:nth-child(3) { animation-delay: 0.15s; }
+.game-row:nth-child(4) { animation-delay: 0.20s; }
+.game-row:nth-child(5) { animation-delay: 0.25s; }
+.game-row:nth-child(6) { animation-delay: 0.30s; }
+.animate-row {
+    opacity: 0;
+    animation: smoothAppear 0.4s ease-out forwards;
 }
 .game-box {
     font-family: 'Times New Roman', Times, serif;
@@ -135,38 +180,31 @@ button.reset-btn:hover {
     vertical-align: top;
     box-sizing: border-box;
     user-select: none;
-}
-.white-text { color: white; }
-.white { background: #ffffff; }
-.black { background: #121213; }
-.gray { background: #3a3a3c; }
-.green { background: #538d4e; }
-.yellow { background: #b59f3b; }
-.dark-green { background: #16640f; }
-.dark-yellow { background: #927a0e; }
-
-.game-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-#game-board {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* WORDLE TITLE */
+.wordle {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#wordle-title {
+    min-height: 30px;
+    opacity: 0;
+    animation: fadeSlideDown 0.6s ease-out forwards;
 }
 
-.possible-words {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
-}
-
+/* WORDLE KEYBOARD */
 .keyboard {
     padding-bottom: 10px;
 }
@@ -183,6 +221,75 @@ button.reset-btn:hover {
     padding-right: 16px;
 }
 
+/* GAME OVER AND VICTORY SCREEN */
+#wordle-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+#wordle-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-top: 8px solid var(--hu-color);
+    max-width: 400px;
+    width: 90%;
+    animation: smoothAppear 0.4s ease-out forwards; 
+}
+.word-link {
+    color: var(--hu-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    display: inline-block;
+    letter-spacing: 3px;
+    transition: all 0.2s ease;
+}
+
+/* WORD LIST (DICTIONARY + "SHOW POSSIBLE WORDS" SECTION */
+.possible-words {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+#word-list {
+    height: 70dvh;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+#word-list::-webkit-scrollbar {
+    width: 8px;
+}
+#word-list::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+    border-radius: 4px;
+}
+#word-list::-webkit-scrollbar-thumb {
+    background: var(--hu-color); 
+    border-radius: 4px;
+}
+#word-list::-webkit-scrollbar-thumb:hover {
+    background: #1a2530;
+}
+
+/* PHONE VERSION (MERGES COLUMNS INTO ONE) */
 @media only screen and (max-width:1300px) {
     .columns { 
         display: block;
